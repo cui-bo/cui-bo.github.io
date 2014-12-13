@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<head>
+	<meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Puzzle</title>
+	<meta name="description" content="HTML5 Game to set color" />
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/viewmodel.js"></script>
+	<script type="text/javascript" src="js/controller.js"></script>
+	<style type="text/css">
+	.form, .comments{display: block;clear: both;margin:  0 auto; width: 600px;}
+	code{white-space: normal;}
+	.comments_warp{margin-top: 650px;}
+	</style>
+	
+</head>
+
+<body>
+	<div class="container">
+		<div class="heading">
+			<h1 class="title">Puzzle</h1>
+			<div class="scoresContainer">
+				<div class="currLevel"></div>
+				<div class="best"></div>
+				<div class="score"></div>
+				<div class="total"></div>
+			</div>
+		</div>
+		<div class="aboveGame">
+			<p class="gameInfo"></p>
+			<a class="reset btn btn-primary">Reset level</a>
+			<a class="newgame btn btn-primary">Restart</a>
+			<a class="instruct btn btn-primary">Instructions</a>
+		</div>
+		<div class="board"></div>
+	</div>
+
+		<div id="instructions" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content" id="pullThisHeight">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">&times;</span><span class="sr-only">关闭</span>
+					</button>
+					<h4 class="modal-title">Instruction</h4>
+				</div>
+				<div class="modal-body">
+					<p>Goal: all pigs turn to angry birds. <br>
+					Instruction: when a pig is clicked, he and his neighbor will change to angry bird, if all pigs become to angry birds, you win ... try youself :)</p>
+
+					<p>Le but : Changer les couchons à angry birds <br>
+					Quand vous cliquez un couchon, lui et ses voisins vont devenir angry bird, si tous les couchons devenu angry birds, vous gagnez !</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal">GO</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<div id="newLevel" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="cheesyGoodJob"></h4>
+				</div>
+				<div class="modal-body">
+					<p id="levelDescriptor"></p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-success" data-dismiss="modal">GO</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<div id="newGame" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title">U sure ?</h4>
+				</div>
+				<div class="modal-body">
+					<p>Really sure ?</p>
+				</div>
+				<div class="modal-footer">
+					<button id="newGameConfirm" type="button" class="btn btn-success" data-dismiss="modal">New games</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+	<div id="restartLevel" class="modal fade">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title" id="cheesyGoodJob">U sure ?</h4>
+				</div>
+				<div class="modal-body">
+					<p>Really sure ?</p>
+				</div>
+				<div class="modal-footer">
+					<button id="resetLevelConfirm" type="button" class="btn btn-success" data-dismiss="modal">Reset</button>
+				</div>
+			</div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+</body>
+
+</html>
