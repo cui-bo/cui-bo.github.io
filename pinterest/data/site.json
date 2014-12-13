@@ -23,6 +23,14 @@
       "site_url_jspractice":"http://jspractice.com/sudoku/",
       "img_name":"sudoku.png",
       "site_desc":"Sudoku solver !"
+    },
+    {
+      "site_name":"Auto Scroll",
+      "site_short_url":"/scroll",
+      "site_url_git":"http://cui-bo.github.io/scroll/",
+      "site_url_jspractice":"http://jspractice.com/scroll/",
+      "img_name":"scroll.png",
+      "site_desc":"Atuo Scroll !"
     }
   ]
 }
