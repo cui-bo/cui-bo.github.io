@@ -1,0 +1,28 @@
+{
+  "sites":[
+    {
+      "site_name":"Alias",
+      "site_short_url":"/alias",
+      "site_url_git":"http://cupidcb.github.io/alias/",
+      "site_url_jspractice":"http://jspractice.com/alias/",
+      "img_name":"alias.png",
+      "site_desc":"A demo site. Original idea from ALIAS."
+    },
+    {
+      "site_name":"Puzzle",
+      "site_short_url":"/puzzle",
+      "site_url_git":"http://cupidcb.github.io/puzzle/",
+      "site_url_jspractice":"http://jspractice.com/puzzle/",
+      "img_name":"puzzle.png",
+      "site_desc":"The site of a puzzle."
+    },
+    {
+      "site_name":"Sudoku",
+      "site_short_url":"/sudoku",
+      "site_url_git":"http://cupidcb.github.io/sudoku/",
+      "site_url_jspractice":"http://jspractice.com/sudoku/",
+      "img_name":"sudoku.png",
+      "site_desc":"Sudoku solver !"
+    }
+  ]
+}
