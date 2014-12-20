@@ -10,14 +10,14 @@ function cookieHelper() {
 		var d = new Date();
 		d.setTime(d.getTime() + (300*24*60*60*1000));
 		var expires = "expires="+d.toGMTString();
-		var toWrite = "gs=" + 
+		var toWrite = "gs=" +
 			game.currentClicks + " " +
 			game.bestLevel + " " +
 			game.clicksForBest + " " +
 			game.totalClicks + " " +
 			game.level + " " +
 			game.isFirstGame + " " +
-			game.gb.board.toString() + 
+			game.gb.board.toString() +
 			"; "+ expires;
 		document.cookie = toWrite;
 		console.log(document.cookie);
@@ -114,14 +114,14 @@ function Game() {
 			}
 			self.setupLevel();
 		});
-		
+
 	}
 
 	this.gameEnd = function(callback) {
 		this.level++;
 		if (this.level == this.bestLevel && this.currentClicks < this.clicksForBest) {
 			this.clicksForBest = this.currentClicks;
-		} 
+		}
 		if (this.level > this.bestLevel) {
 			this.clicksForBest = this.currentClicks;
 			this.bestLevel = this.level;
@@ -194,7 +194,7 @@ function GameBoard (wd, hi) {
 	// This board is accessed wide first then high
 	//    0 | 1 | 2 | 3 | ....
     //  - - - - - - - - - - - -
-   	//  0   |   |   |   | 
+   	//  0   |   |   |   |
 	//  - - - - - - - - - - - -
 	//  1   |   |[2][1]
 	//  -
@@ -267,7 +267,7 @@ function GameBoard (wd, hi) {
 		}
 	}
 
-	// For a single tile finds the corresponding DOM element 
+	// For a single tile finds the corresponding DOM element
 	// and inverts the color
 	this.processCLickView = function(w, h) {
 		var coord = ".coord" + w + "q" + h;
@@ -275,19 +275,19 @@ function GameBoard (wd, hi) {
 
 		var padding = this.getPadding(this.high);
 		var s = (585 - padding * (this.high + 2)) / (this.high + 1); // Calculate the size of box
-		
+
 
 		if (this.board[w][h] == 0) {
 			//$(coord).css("background-color", "#E6AB5E");
-			$(coord).css({ 
-			     "background-image": "url(images/Pig-icon.png)", 
+			$(coord).css({
+			     "background-image": "url(images/croissant.png)",
 			     //"background-attachment": "fixed",
 			     "background-size": s + "px"
 			});
 		} else {
 			//$(coord).css("background-color", "#5C90FF");
-			$(coord).css({ 
-			     "background-image": "url(images/angry-bird-icon.png)", 
+			$(coord).css({
+			     "background-image": "url(images/cake.png)", 
 			     //"background-attachment": "fixed",
 			     "background-size": s + "px"
 			});
