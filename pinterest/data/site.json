@@ -1,36 +1,38 @@
 {
-  "sites":[
-    {
-      "site_name":"Alias",
-      "site_short_url":"/alias",
-      "site_url_git":"http://cui-bo.github.io/alias/",
-      "site_url_jspractice":"http://jspractice.com/alias/",
-      "img_name":"alias.png",
-      "site_desc":"A demo site. Original idea from ALIAS."
-    },
-    {
-      "site_name":"Puzzle",
-      "site_short_url":"/puzzle",
-      "site_url_git":"http://cui-bo.github.io/puzzle/",
-      "site_url_jspractice":"http://jspractice.com/puzzle/",
-      "img_name":"puzzle.png",
-      "site_desc":"The site of a puzzle. Be care, this site not support for mobile. To be improved!"
-    },
-    {
-      "site_name":"Sudoku",
-      "site_short_url":"/sudoku",
-      "site_url_git":"http://cui-bo.github.io/sudoku/",
-      "site_url_jspractice":"http://jspractice.com/sudoku/",
-      "img_name":"sudoku.png",
-      "site_desc":"Sudoku solver !"
-    },
-    {
-      "site_name":"Auto Scroll",
-      "site_short_url":"/scroll",
-      "site_url_git":"http://cui-bo.github.io/scroll/",
-      "site_url_jspractice":"http://jspractice.com/scroll/",
-      "img_name":"scroll.png",
-      "site_desc":"Atuo Scroll !"
-    }
-  ]
+  "sites": [{
+    "site_name": "Alias",
+    "site_short_url": "/alias",
+    "site_url_git": "http://cui-bo.github.io/alias/",
+    "site_url_jspractice": "http://jspractice.com/alias/",
+    "img_name": "alias.png",
+    "site_desc": "A demo site. Original idea from ALIAS."
+  }, {
+    "site_name": "Puzzle",
+    "site_short_url": "/puzzle",
+    "site_url_git": "http://cui-bo.github.io/puzzle/",
+    "site_url_jspractice": "http://jspractice.com/puzzle/",
+    "img_name": "puzzle.png",
+    "site_desc": "The site of a puzzle. Be care, this site not support for mobile. To be improved!"
+  }, {
+    "site_name": "Sudoku",
+    "site_short_url": "/sudoku",
+    "site_url_git": "http://cui-bo.github.io/sudoku/",
+    "site_url_jspractice": "http://jspractice.com/sudoku/",
+    "img_name": "sudoku.png",
+    "site_desc": "Sudoku solver !"
+  }, {
+    "site_name": "Auto Scroll",
+    "site_short_url": "/scroll",
+    "site_url_git": "http://cui-bo.github.io/scroll/",
+    "site_url_jspractice": "http://jspractice.com/scroll/",
+    "img_name": "scroll.png",
+    "site_desc": "Atuo Scroll !"
+  }, {
+    "site_name": "Bookmark",
+    "site_short_url": "/bookmark",
+    "site_url_git": "http://cui-bo.github.io/bookmark/",
+    "site_url_jspractice": "http://jspractice.com/bookmark/",
+    "img_name": "",
+    "site_desc": "My Bookmark !"
+  }]
 }
