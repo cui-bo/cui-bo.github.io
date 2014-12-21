@@ -1,3 +1,21 @@
+// Typeahead js
+$(document).ready(function() {
+  $('input.typeahead').typeahead({
+    // name: 'accounts',
+    // local: ['Audi', 'BMW', 'Bugatti', 'Ferrari', 'Ford', 'Lamborghini',
+    //   'Mercedes Benz', 'Porsche', 'Rolls-Royce', 'Volkswagen'
+    // ]
+
+    name: 'bookmark',
+    prefetch: 'data/countries.json',
+    limit: 10
+  });
+});
+
+
+
+/*
+// Angular JS
 var app = angular.module('myApp', []);
 
 app.controller('myCtrl', function($scope, $http) {
@@ -8,9 +26,11 @@ app.controller('myCtrl', function($scope, $http) {
 
   // Save data
   $scope.save = function() {
-  /*$http.post('path/to/server/file/to/save/json', $scope.languages).then(function(data) {
-    $scope.msg = 'Data saved';
-  });*/
-    $scope.msg = 'Data sent: '+ JSON.stringify($scope.bookmarks);
+    $http.post('data/new.json', $scope.bookmarks).then(function(data) {
+      console.log(data);
+      $scope.msg = 'Data saved';
+    });
+    //$scope.msg = 'Data sent: '+ JSON.stringify($scope.bookmarks);
   };
 });
+*/

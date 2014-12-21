@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html ng-app="myApp" ng-controller="myCtrl">
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+  <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/typeahead.min.js"></script>
+  <link rel="stylesheet" href="css/main.css">
+
   <meta charset=utf-8 />
   <title>Bookmark</title>
-  <script src="js/main.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
+  <!--
   <form>
-    Bookmark Name: <input type="text" ng-model="bookmark.name" /><br />
-    Bookmark Url: <input type="text" ng-model="bookmark.url" /><br />
-    Bookmark Category: <input type="text" ng-model="bookmark.category" /><br />
-    <br />
-    <br />
-    <br />
     <div ng-repeat="bookmark in bookmarks">
       <label>{{bookmark.name}}</label>
       <p>{{bookmark.url}}</p>
@@ -21,5 +20,10 @@
     <button ng-click="save()">Save</button>
     <p>{{msg}}</p>
   </form>
+-->
+<div class="searchBox">
+  <label>Search by keyword:</label><br/>
+  <input type="text" class="typeahead tt-query" autocomplete="off" spellcheck="false" placeholder="bookmark">
+</div>
 </body>
 </html>
