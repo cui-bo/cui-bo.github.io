@@ -1,13 +1,34 @@
 // Typeahead js
 $(document).ready(function() {
-  $('input.typeahead').typeahead({
-    // name: 'accounts',
-    // local: ['Audi', 'BMW', 'Bugatti', 'Ferrari', 'Ford', 'Lamborghini',
-    //   'Mercedes Benz', 'Porsche', 'Rolls-Royce', 'Volkswagen'
-    // ]
 
+  var arrBookmarks = [];
+
+  // $.getJSON("data/bookmark.json", {}, function(data) {
+  //   $.each(data.bookmarks, function(key, bookmark) {
+  //     //if (jQuery.inArray(bookmark.category, bookmarks) == -1) {
+  //     arrBookmarks.push(bookmark.category);
+  //     //}
+  //   });
+  // });
+
+  $.ajax({
+    url: "data/bookmark.json",
+    async: false,
+    dataType: 'json',
+    success: function(data) {
+      $.each(data.bookmarks, function(key, bookmark) {
+        if (jQuery.inArray(bookmark.category, arrBookmarks) == -1) {
+          arrBookmarks.push(bookmark.category);
+        }
+      });
+    }
+  });
+
+
+  $('input.typeahead').typeahead({
     name: 'bookmark',
-    prefetch: 'data/countries.json',
+    local: arrBookmarks,
+    //prefetch: 'data/countries.json',
     limit: 10
   });
 });

@@ -1,15 +1,28 @@
 {
-  "version":"1",
-  "bookmarks":[
-    {
-      "name":"test_name1",
-      "url":"http://www.google.fr",
-      "category":"javascript"
-    },
-    {
-      "name":"test_name2",
-      "url":"http://www.google.fr",
-      "category":"javascript"
-    }
-  ]
+  "version": "1",
+  "bookmarks": [{
+    "name": "test_name1",
+    "url": "http://www.google.fr",
+    "category": "javascript"
+  }, {
+    "name": "test_name2",
+    "url": "http://www.google.fr",
+    "category": "php"
+  }, {
+    "name": "test_name3",
+    "url": "http://www.google.fr",
+    "category": "javascript"
+  }, {
+    "name": "test_name4",
+    "url": "http://www.google.fr",
+    "category": "python"
+  }, {
+    "name": "test_name5",
+    "url": "http://www.google.fr",
+    "category": "java"
+  }, {
+    "name": "test_name6",
+    "url": "http://www.google.fr",
+    "category": "ruby"
+  }]
 }
