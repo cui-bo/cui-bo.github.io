@@ -32,7 +32,7 @@ $(document).ready(function() {
     limit: 10
   });
 
-  $('.search').click(function(){
+  $('#search').click(function(){
     alert('click button search');
   });
 
