@@ -2,6 +2,7 @@
 $(document).ready(function() {
 
   var arrBookmarks = [];
+  var bookmark = [];
 
   // $.getJSON("data/bookmark.json", {}, function(data) {
   //   $.each(data.bookmarks, function(key, bookmark) {
@@ -16,6 +17,7 @@ $(document).ready(function() {
     async: false,
     dataType: 'json',
     success: function(data) {
+      bookmark = data.bookmarks;
       $.each(data.bookmarks, function(key, bookmark) {
         if (jQuery.inArray(bookmark.category, arrBookmarks) == -1) {
           arrBookmarks.push(bookmark.category);
@@ -33,7 +35,7 @@ $(document).ready(function() {
   });
 
   $('#search').click(function(){
-    alert('click button search');
+    
   });
 
 });
