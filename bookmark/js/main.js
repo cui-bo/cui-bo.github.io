@@ -1,26 +1,17 @@
 // Typeahead js
 $(document).ready(function() {
 
-  var arrBookmarks = [];
-  var bookmark = [];
-
-  // $.getJSON("data/bookmark.json", {}, function(data) {
-  //   $.each(data.bookmarks, function(key, bookmark) {
-  //     //if (jQuery.inArray(bookmark.category, bookmarks) == -1) {
-  //     arrBookmarks.push(bookmark.category);
-  //     //}
-  //   });
-  // });
+  var bookmarks = {};
+  var bookmarks.category = [];
 
   $.ajax({
     url: "data/bookmark.json",
     async: false,
     dataType: 'json',
     success: function(data) {
-      bookmark = data.bookmarks;
       $.each(data.bookmarks, function(key, bookmark) {
-        if (jQuery.inArray(bookmark.category, arrBookmarks) == -1) {
-          arrBookmarks.push(bookmark.category);
+        if (jQuery.inArray(bookmark.category, bookmarks.category) == -1) {
+     bookmarks.category.push(bookmark.category);
         }
       });
     }
@@ -29,7 +20,7 @@ $(document).ready(function() {
 
   $('input.typeahead').typeahead({
     name: 'bookmark',
-    local: arrBookmarks,
+    local: bookmarks.category,
     //prefetch: 'data/countries.json',
     limit: 10
   });
