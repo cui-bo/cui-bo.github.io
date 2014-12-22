@@ -31,6 +31,11 @@ $(document).ready(function() {
     //prefetch: 'data/countries.json',
     limit: 10
   });
+
+  $('.search').click(function(){
+    alert('click button search');
+  });
+
 });
 
 
