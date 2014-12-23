@@ -1,55 +1,41 @@
 // Typeahead js
 $(document).ready(function() {
 
-  var bookmarks = {};
-  var bookmarks.category = [];
+  var arrBookmarkCategory = [];
+  var arrBookmarks = [];
 
+  // Get bookmark data
   $.ajax({
     url: "data/bookmark.json",
     async: false,
     dataType: 'json',
     success: function(data) {
       $.each(data.bookmarks, function(key, bookmark) {
-        if (jQuery.inArray(bookmark.category, bookmarks.category) == -1) {
-     bookmarks.category.push(bookmark.category);
+        if (jQuery.inArray(bookmark.category, arrBookmarkCategory) ==
+          -1) {
+          arrBookmarkCategory.push(bookmark.category);
         }
+        arrBookmarks.push(bookmark);
       });
     }
   });
 
-
+  // Autocomplete
   $('input.typeahead').typeahead({
     name: 'bookmark',
-    local: bookmarks.category,
-    //prefetch: 'data/countries.json',
+    local: arrBookmarkCategory,
     limit: 10
   });
 
-  $('#search').click(function(){
-    
-  });
-
-});
-
-
-
-/*
-// Angular JS
-var app = angular.module('myApp', []);
-
-app.controller('myCtrl', function($scope, $http) {
-  // Get data
-  $http.get('data/bookmark.json').then(function(response) {
-    $scope.bookmarks = response.data.bookmarks;
-  });
-
-  // Save data
-  $scope.save = function() {
-    $http.post('data/new.json', $scope.bookmarks).then(function(data) {
-      console.log(data);
-      $scope.msg = 'Data saved';
+  // Display results
+  $('#search').click(function() {
+    $('ul.searchResult').empty();
+    $.each(arrBookmarks, function(key, bookmark) {
+      if ($('#keyword').val() == bookmark.category) {
+        $('.searchResult').append('<li><a href="' + bookmark.url +
+          '">' + bookmark.name + '</a></li>');
+      }
     });
-    //$scope.msg = 'Data sent: '+ JSON.stringify($scope.bookmarks);
-  };
+  });
+
 });
-*/

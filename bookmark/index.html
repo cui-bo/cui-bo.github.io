@@ -4,31 +4,23 @@
   <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/typeahead.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
   <meta charset=utf-8 />
   <title>Bookmark</title>
-  <script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
-  <!--
-  <form>
-    <div ng-repeat="bookmark in bookmarks">
-      <label>{{bookmark.name}}</label>
-      <p>{{bookmark.url}}</p>
-    </div>
-    <button ng-click="save()">Save</button>
-    <p>{{msg}}</p>
-  </form>
--->
-<div class="searchBox">
-  <label>Search by keyword:</label><br/>
-  <input type="text" class="typeahead tt-query" autocomplete="off" spellcheck="false" placeholder="bookmark">
+  <div class="searchBox">
+    <label>Search by keyword:</label><br/>
+    <input type="text" id="keyword" class="typeahead tt-query" autocomplete="off" spellcheck="false" placeholder="Search Bookmark Category">
+    <button id="search" type="button" class="btn btn-primary">search</button>
+  </div>
 
-<button id="search">search</button>
-</div>
-
-<div class="searchResult">
-</div>
+  <ul class="searchResult">
+  </ul>
 </body>
 </html>
