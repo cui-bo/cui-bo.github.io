@@ -3,7 +3,7 @@
   "bookmarks": [{
     "name": "test_name1",
     "url": "http://www.google.fr",
-    "category": "javascript"
+    "category": "javascript,php,java"
   }, {
     "name": "test_name2",
     "url": "http://www.google.fr",

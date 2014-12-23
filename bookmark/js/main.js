@@ -11,10 +11,15 @@ $(document).ready(function() {
     dataType: 'json',
     success: function(data) {
       $.each(data.bookmarks, function(key, bookmark) {
-        if (jQuery.inArray(bookmark.category, arrBookmarkCategory) ==
-          -1) {
-          arrBookmarkCategory.push(bookmark.category);
-        }
+        var strCategory = bookmark.category;
+        var categories = strCategory.split(',');
+
+        $.each(categories, function(key, category) {
+          if (jQuery.inArray(category, arrBookmarkCategory) ==
+            -1) {
+            arrBookmarkCategory.push(category);
+          }
+        });
         arrBookmarks.push(bookmark);
       });
     }
@@ -31,7 +36,7 @@ $(document).ready(function() {
   $('#search').click(function() {
     $('ul.searchResult').empty();
     $.each(arrBookmarks, function(key, bookmark) {
-      if ($('#keyword').val() == bookmark.category) {
+      if (bookmark.category.indexOf($('#keyword').val()) > -1) {
         $('.searchResult').append('<li><a href="' + bookmark.url +
           '">' + bookmark.name + '</a></li>');
       }
