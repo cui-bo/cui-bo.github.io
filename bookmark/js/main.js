@@ -24,6 +24,11 @@ $(document).ready(function() {
       });
     }
   });
+
+  // Add categories to IHM
+  var strBookmarkCategory = arrBookmarkCategory.sort().join(", ");
+  $("#tag").append(strBookmarkCategory);
+
   // LOG
   console.log(arrBookmarkCategory);
   // Autocomplete
