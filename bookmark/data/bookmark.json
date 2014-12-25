@@ -436,9 +436,11 @@
       "name": "Les Bidochons",
       "url": "http://www.bidochon.fr",
       "category": "fun"
+    }, {
+      "name": "BENJAMIN SANTI - Développeur Web Freelance - Symfony2 / Symfony 1.4 - NodeJS",
+      "url": "http://www.benjamin-santi.com",
+      "category": "cv online,"
     }
-
-
 
   ]
 }
