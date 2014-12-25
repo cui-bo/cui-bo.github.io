@@ -1,28 +1,444 @@
 {
   "version": "1",
   "bookmarks": [{
-    "name": "test_name1",
-    "url": "http://www.google.fr",
-    "category": "javascript,php,java"
-  }, {
-    "name": "test_name2",
-    "url": "http://www.google.fr",
-    "category": "php"
-  }, {
-    "name": "test_name3",
-    "url": "http://www.google.fr",
-    "category": "javascript"
-  }, {
-    "name": "test_name4",
-    "url": "http://www.google.fr",
-    "category": "python"
-  }, {
-    "name": "test_name5",
-    "url": "http://www.google.fr",
-    "category": "java"
-  }, {
-    "name": "test_name6",
-    "url": "http://www.google.fr",
-    "category": "ruby"
-  }]
+      "name": "外刊IT评论",
+      "url": "http://www.vaikan.com",
+      "category": "news,it"
+    }, {
+      "name": "wow!eBook",
+      "url": "http://www.wowebook.com",
+      "category": "book,ebook"
+    }, {
+      "name": "文学爱好者",
+      "url": "http://www.523333.com",
+      "category": "book,reading"
+    }, {
+      "name": "伪君子pdf",
+      "url": "http://www.523333.com/zazhi/%E4%BC%AA%E5%90%9B%E5%AD%90.pdf",
+      "category": "book,reading,ebook"
+    }, {
+      "name": "你应该知道的欧洲史",
+      "url": "http://www.gmw.cn/content/node_5688.htm",
+      "category": "book,reading,ebook"
+    }, {
+      "name": "光明网",
+      "url": "http://www.gmw.cn",
+      "category": "site,news"
+    }, {
+      "name": "我为什么不要应届毕业生: 大学生到底被谁抛弃",
+      "url": "http://xy.eywedu.com/endeavourers/E/%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E8%A6%81%E5%BA%94%E5%B1%8A%E6%AF%95%E4%B8%9A%E7%94%9F%EF%BC%9A%E5%A4%A7%E5%AD%A6%E7%94%9F%E5%88%B0%E5%BA%95%E8%A2%AB%E8%B0%81%E6%8A%9B%E5%BC%83/index.htm",
+      "category": "book,reading,ebook"
+    }, {
+      "name": "小学语文资源网",
+      "url": "http://xy.eywedu.com",
+      "category": "site,ressource"
+    }, {
+      "name": "凤凰读书",
+      "url": "http://v.book.ifeng.com/shuku.htm?yc=1&f_cate=6&s_cate=31&t_cate=132&fee=0&o_type=3",
+      "category": "site,ressource,ebook,book,reading"
+    }, {
+      "name": "沪江英语",
+      "url": "http://www.hjenglish.com/new/fanyiyuedu/",
+      "category": "learn,english,ressource"
+    }, {
+      "name": "老舍作品集",
+      "url": "http://www.millionbook.net/mj/l/laoshe/",
+      "category": "reading,ebook"
+    }, {
+      "name": "季羡林-留德十年",
+      "url": "http://book.people.com.cn/GB/69399/107429/163681/index.html",
+      "category": "reading,ebook"
+    }, {
+      "name": "1001pharmacies",
+      "url": "http://www.1001pharmacies.com",
+      "category": "buy,pharmacie"
+    }, {
+      "name": "billetreduc",
+      "url": "http://www.billetreduc.com",
+      "category": "buy,billet"
+    }, {
+      "name": "groupon",
+      "url": "http://www.groupon.fr",
+      "category": "buy,billet"
+    }, {
+      "name": "closevent",
+      "url": "http://www.closevent.com",
+      "category": "buy,billet"
+    }, {
+      "name": "paris-billets",
+      "url": "http://www.paris-billets.com",
+      "category": "buy,billet"
+    }, {
+      "name": "小鹿牙胶",
+      "url": "http://www.vulli.fr/en/points-de-vente/revendeurs-vulli.html",
+      "category": "buy,child"
+    }, {
+      "name": "caradisiac",
+      "url": "http://www.caradisiac.com",
+      "category": "auto"
+    }, {
+      "name": "lacoopauto",
+      "url": "http://lacoopauto.com",
+      "category": "auto"
+    }, {
+      "name": "法国买车注意",
+      "url": "http://bbs.strong-study.com/archiver/showtopic-595.aspx",
+      "category": "buy,auto"
+    }, {
+      "name": "二手车怎样鉴别事故车",
+      "url": "http://www.xjdaily.com.cn/auto/009/02/932283.shtml",
+      "category": "buy,auto"
+    }, {
+      "name": "汽车知识全攻略-华人街",
+      "url": "http://www.huarenjie.com/thread-1199364-1-1.html",
+      "category": "auto"
+    }, {
+      "name": "annoncesjaunes",
+      "url": "http://www.annoncesjaunes.fr",
+      "category": "buy,annonce"
+    }, {
+      "name": "quizover",
+      "url": "http://www.quizover.com",
+      "category": "quiz"
+    }, {
+      "name": "List of I.T. Certifications",
+      "url": "http://www.mcmcse.com/othercerts.shtml",
+      "category": "it,certification"
+    }, {
+      "name": "DMOZ - the Open Directory Project",
+      "url": "http://www.dmoz.org",
+      "category": "it,com"
+    }, {
+      "name": "Architecture interne du serveur Apache",
+      "url": "http://wawadeb.crdp.ac-caen.fr/iso/tmp/ressources/linux/reseau/www.laissus.fr/cours/node182.html",
+      "category": "it,apache"
+    }, {
+      "name": "Apache Core Features",
+      "url": "http://httpd.apache.org/docs/current/mod/core.html",
+      "category": "it,apache"
+    }, {
+      "name": "C语言 C语言程序设计 C语言教程",
+      "url": "http://www.72up.com/c.htm",
+      "category": "learn,c,language,it,edu"
+    }, {
+      "name": "Programming in C - UNIX System Calls and Subroutines using C. ",
+      "url": "http://www.cs.cf.ac.uk/Dave/C/",
+      "category": "learn,c,language,it,edu"
+    }, {
+      "name": "The C Library Reference Guide",
+      "url": "http://www.acm.uiuc.edu/webmonkeys/book/c_guide/",
+      "category": "learn,c,language,it,edu"
+    }, {
+      "name": "Installing Cassandra on Ubuntu 12.04.1 Linux",
+      "url": "http://won0817blog.blogspot.fr/2012/10/installing-cassandra-on-ubuntu-12041.html",
+      "category": "learn,cassandra,language,it,edu"
+    }, {
+      "name": "prestashop-online shop",
+      "url": "http://www.prestashop.com",
+      "category": "cms,it"
+    }, {
+      "name": "Color Hex Color Codes",
+      "url": "http://www.color-hex.com",
+      "category": "css,color,hex"
+    }, {
+      "name": "border-radius",
+      "url": "http://border-radius.com",
+      "category": "css"
+    }, {
+      "name": "CSS Portal - Templates, Tutorials, Books, Software, Code Examples",
+      "url": "http://www.cssportal.com",
+      "category": "css"
+    }, {
+      "name": "css3menu",
+      "url": "http://css3menu.com",
+      "category": "css,menu"
+    }, {
+      "name": "lesscss.org",
+      "url": "http://lesscss.org",
+      "category": "css,less"
+    }, {
+      "name": "sass",
+      "url": "http://sass-lang.com",
+      "category": "css,sass"
+    }, {
+      "name": "Stylus — expressive, robust, feature-rich CSS preprocessor",
+      "url": "http://learnboost.github.io/stylus/",
+      "category": "css,stylus"
+    }, {
+      "name": "站酷（ZCOOL）- 设计师互动平台",
+      "url": "http://www.zcool.com.cn",
+      "category": "design,resource"
+    }, {
+      "name": "花瓣网",
+      "url": "http://huaban.com/favorite/web_app_icon",
+      "category": "design,resource,icon"
+    }, {
+      "name": "Five common PHP design patterns",
+      "url": "https://www.ibm.com/developerworks/library/os-php-designptrns/",
+      "category": "design pattern,pattern,php"
+    }, {
+      "name": "Apeche Log files",
+      "url": "http://httpd.apache.org/docs/2.2/logs.html",
+      "category": "apache,log"
+    }, {
+      "name": "Course of Distributed Systems",
+      "url": "https://courses.engr.illinois.edu/cs425/fa2009/assignments.html",
+      "category": "course"
+    }, {
+      "name": "TED",
+      "url": "http://www.ted.com",
+      "category": "site,edu,online,online course,idea"
+    }, {
+      "name": "Iana-Root Zone Database",
+      "url": "http://www.iana.org/domains/root/db",
+      "category": "domain name,it"
+    }, {
+      "name": "How to Learn Emacs: A Hand-drawn One-pager for Beginners / A visual tutorial",
+      "url": "http://sachachua.com/blog/2013/05/how-to-learn-emacs-a-hand-drawn-one-pager-for-beginners/",
+      "category": "it,learn,emacs"
+    }, {
+      "name": "URL Encoding",
+      "url": "http://www.blooberry.com/indexdot/html/topics/urlencoding.htm",
+      "category": "it,url,encoding,url encoding"
+    }, {
+      "name": "37signals",
+      "url": "http://37signals.com",
+      "category": "site,idea,it"
+    }, {
+      "name": "basecamp-project management app",
+      "url": "https://basecamp.com",
+      "category": "site,idea,it"
+    }, {
+      "name": "6 Phases of the Web Site Design and Development Process | iDesign Studios",
+      "url": "http://www.idesignstudios.com/blog/web-design/phases-web-design-development-process/#.VJtQhp0A0",
+      "category": "site,it,idea"
+    }, {
+      "name": "How To Create Your First iPhone App (2012 Edition) | Smashing Mobile",
+      "url": "http://www.smashingmagazine.com/2009/08/11/how-to-create-your-first-iphone-application/",
+      "category": "it,learn,iphone"
+    }, {
+      "name": "hackdesign",
+      "url": "https://hackdesign.org/lessons",
+      "category": "it,design"
+    }, {
+      "name": "kickstarter",
+      "url": "https://www.kickstarter.com",
+      "category": "idea,starter"
+    }, {
+      "name": "Online video tutorials & training | lynda.com",
+      "url": "http://www.lynda.com",
+      "category": "learn,online course"
+    }, {
+      "name": "理解RESTful架构-阮一峰",
+      "url": "http://www.ruanyifeng.com/blog/2011/09/restful.html",
+      "category": "it,learn,restful"
+    }, {
+      "name": "网警是如何找到你的？所以千万别做坏事",
+      "url": "www.360doc.com/content/09/0911/02/76471_5821450.shtml",
+      "category": "it,fun"
+    }, {
+      "name": "IOS source code example",
+      "url": "http://code4app.net",
+      "category": "it,learn,ios,source code,demo,example"
+    }, {
+      "name": "iOS开发者必备：十款最有用的工具",
+      "url": "http://mobile.51cto.com/design-258036.htm",
+      "category": "it,ios,tools"
+    }, {
+      "name": "iPhone 開發教學",
+      "url": "http://blog.changyy.org/2010/03/iphone-hello-world.html",
+      "category": "it,learn,ios,source code,demo,example"
+    }, {
+      "name": "Mac OS X 10.7 Lion下载及安装办法",
+      "url": "http://www.baifeng.me/apple/macosx/2011/07/1756/",
+      "category": "learn,mac os"
+    }, {
+      "name": "object-c 入门基础篇",
+      "url": "http://wsqwsq000.iteye.com/blog/1117505",
+      "category": "learn,objective-c"
+    }, {
+      "name": "iteye",
+      "url": "http://www.iteye.com",
+      "category": "site,it"
+    }, {
+      "name": "CocoaChina 苹果开发中文站",
+      "url": "http://www.cocoachina.com",
+      "category": "site,it,cocoa"
+    }, {
+      "name": "IOS source code example",
+      "url": "http://code4app.net",
+      "category": "it,learn,ios,source code,demo,example"
+    }, {
+      "name": "The Open Source iPhone Apps List",
+      "url": "https://maniacdev.com/2010/06/35-open-source-iphone-app-store-apps-updated-with-10-new-apps",
+      "category": "it,learn,ios,iphone apps dev,source code,demo,example"
+    }, {
+      "name": "How to Install Oracle Java on Ubuntu Linux",
+      "url": "http://www.wikihow.com/Install-Oracle-Java-on-Ubuntu-Linux",
+      "category": "it,learn,oracle java"
+    }, {
+      "name": "A fancy AJAX contact form",
+      "url": "http://tutorialzine.com/2009/09/fancy-contact-form/",
+      "category": "it,learn,ajax,javascript,source code,demo,example"
+    }, {
+      "name": "Ajaxload - Ajax loading gif generator",
+      "url": "http://ajaxload.info",
+      "category": "it,online tools,tools,gif generator"
+    }, {
+      "name": "jsfiddle",
+      "url": "http://jsfiddle.net",
+      "category": "javascript,online tools"
+    }, {
+      "name": "Prototype, Google Maps API and the HeatMapAPI",
+      "url": "http://jeffreybarke.net/2008/07/density-map-tutorial/",
+      "category": "it,learn,google map api"
+    }, {
+      "name": "jQuery qunit",
+      "url": "http://qunitjs.com",
+      "category": "it,qunit"
+    }, {
+      "name": "如何用Qunit测试你的JavaScript代码",
+      "url": "http://www.woiweb.net/how-to-test-your-javascript-code-with-qunit.html",
+      "category": "it,learn,qunit"
+    }, {
+      "name": "CreateJS | A suite of JavaScript libraries and tools designed for working with HTML5",
+      "url": "http://createjs.com/#!/Home",
+      "category": "javascript plugin,plugin javascript,javascript library"
+    }, {
+      "name": "Javascript的胜利",
+      "url": "http://developer.51cto.com/exp/Exjs/PDF/javaScript_deepdive_final_Chinaese.pdf",
+      "category": "it,reading,online book"
+    }, {
+      "name": "中国IT技术网站",
+      "url": "http://www.51cto.com",
+      "category": "it,learn,site"
+    }, {
+      "name": "Foundation-The most advanced responsive front-end framework in the world",
+      "url": "http://foundation.zurb.com",
+      "category": "it,site"
+    }, {
+      "name": "全代码打造简洁美观回到顶部按钮",
+      "url": "http://blog.wpjam.com/m/pure-code-4-back-2-top/",
+      "category": "it,learn,jquery,source code,demo,example"
+    }, {
+      "name": "Ubuntu Mobile and Embedded 手持设备上的 Linux",
+      "url": "http://www.ibm.com/developerworks/cn/education/linux/l-ubuntu/index.html",
+      "category": "it,learn,ubuntu mobile,embedded"
+    }, {
+      "name": "Photoshop CS5 破解版 + 序列号",
+      "url": "http://bbs.feng.com/read-htm-tid-809998.html",
+      "category": "download,photoshop"
+    }, {
+      "name": "用Photoshop去除照片中文字的几个基本技法",
+      "url": "www.webjx.com/htmldata/2007-08-06/1186395503.html",
+      "category": "it,learn,phtotshop"
+    }, {
+      "name": "Regular expression tool - regex.larsolavtorvik.com",
+      "url": "http://regex.larsolavtorvik.com",
+      "category": "online tool,regex,php"
+    }, {
+      "name": "Guide to Test-Driven Development",
+      "url": "http://code.tutsplus.com/tutorials/the-newbies-guide-to-test-driven-development--net-13835",
+      "category": "it,learn,tdd"
+    }, {
+      "name": "PPT模板",
+      "url": "http://www.pptstore.net",
+      "category": "download,ppt"
+    }, {
+      "name": "Envato Studio - WordPress Customization to Logo Design and more",
+      "url": "http://studio.envato.com",
+      "category": "it,idea"
+    }, {
+      "name": "极客公园",
+      "url": "http://www.geekpark.net",
+      "category": "it,site,news"
+    }, {
+      "name": "SDC设计师网址导航 - 学设计从这里开始",
+      "url": "http://hao.uisdc.com",
+      "category": "it,learn,design"
+    }, {
+      "name": "Runnable - Discover Everything through Code",
+      "url": "http://runnable.com",
+      "category": "it,learn,code,demo"
+    }, {
+      "name": "A Step-by-Step Guide to Your First AngularJS App",
+      "url": "http://www.toptal.com/angular-js/a-step-by-step-guide-to-your-first-angularjs-app",
+      "category": "it,learn,demo,angularjs"
+    }, {
+      "name": "Como App Maker - Make an App with Our Easy App Builder",
+      "url": "http://www.como.com",
+      "category": "online tools,apps"
+    }, {
+      "name": "css3动画详解",
+      "url": "http://beiyuu.com/css3-animation/",
+      "category": "it,learn,css3"
+    }, {
+      "name": "share presentation",
+      "url": "https://speakerdeck.com",
+      "category": "it,share,ppt,presentation,online tools"
+    }, {
+      "name": "Share files",
+      "url": "http://ge.tt",
+      "category": "it,online tools"
+    }, {
+      "name": "Share files",
+      "url": "http://senduit.com",
+      "category": "it,online tools"
+    }, {
+      "name": "Create and share visual ideas",
+      "url": "http://www.easel.ly",
+      "category": "web,template,idea"
+    }, {
+      "name": "html5boilerplate",
+      "url": "http://html5boilerplate.com",
+      "category": "it,online tools,html5,web,front-end,template"
+    }, {
+      "name": "RocketTheme - Joomla Templates, WordPress Themes, Magento Templates and phpBB Styles",
+      "url": "http://www.rockettheme.com",
+      "category": "web,template,themes"
+    }, {
+      "name": "模板王-网页模板下载",
+      "url": "http://www.mobanwang.com/mb/",
+      "category": "it,template"
+    }, {
+      "name": "网页模板",
+      "url": "http://sc.68design.net/mb/p15",
+      "category": "it,template"
+    }, {
+      "name": "CSS3 hover effects pack",
+      "url": "http://gudh.github.io/ihover/dist/index.html",
+      "category": "hover,source code,demo,example,resource"
+    }, {
+      "name": "Flat Long Shadows: Step-by-step Tutorial, Resources and Examples",
+      "url": "http://www.awwwards.com/flat-long-shadows-step-by-step-tutorial-resources-and-examples.html",
+      "category": "resource,source code,demo,example"
+    }, {
+      "name": "Create a Set of Almost Flat Modern Icons in Adobe Illustrator",
+      "url": "http://design.tutsplus.com/tutorials/create-a-set-of-almost-flat-modern-icons-in-adobe-illustrator--vector-12644",
+      "category": "demo,illustrator,adobe"
+    }, {
+      "name": "Create a Simple Map Icon in Adobe Illustrator",
+      "url": "http://vectips.com/tutorials/create-a-simple-map-icon-in-adobe-illustrator/",
+      "category": "demo,illustrator,adobe"
+    }, {
+      "name": "cygwin",
+      "url": "http://www.cygwin.com",
+      "category": "linux,tools"
+    }, {
+      "name": "那些年，兔子的那些事儿",
+      "url": "http://tieba.baidu.com/p/1586577631",
+      "category": "fun"
+    }, {
+      "name": "CREATE YOUR OWN CARTOON CHARACTER",
+      "url": "http://www.sp-studio.de",
+      "category": "fun"
+    }, {
+      "name": "Les Bidochons",
+      "url": "http://www.bidochon.fr",
+      "category": "fun"
+    }
+
+
+
+  ]
 }

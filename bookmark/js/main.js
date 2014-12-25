@@ -24,7 +24,8 @@ $(document).ready(function() {
       });
     }
   });
-
+  // LOG
+  console.log(arrBookmarkCategory);
   // Autocomplete
   $('input.typeahead').typeahead({
     name: 'bookmark',
