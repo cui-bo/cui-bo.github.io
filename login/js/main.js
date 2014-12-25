@@ -20,7 +20,7 @@ $(document).ready(function() {
       if ((user.username == inputUsername) && (user.password ==
           inputPassword)) {
         console.log("OK");
-        window.location.replace('pinterest');
+        window.location.replace('pinterest/index.html');
       }
     });
   }
