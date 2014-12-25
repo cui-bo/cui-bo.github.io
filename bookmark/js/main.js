@@ -38,15 +38,27 @@ $(document).ready(function() {
     limit: 10
   });
 
+  function displayResult() {
+    $('ul.searchResult').empty();
+    if ($('#keyword').val() != '') {
+      $.each(arrBookmarks, function(key, bookmark) {
+        if (bookmark.category.indexOf($('#keyword').val()) > -1) {
+          $('.searchResult').append('<li><a href="' + bookmark.url +
+            '">' + bookmark.name + '</a></li>');
+        }
+      });
+    }
+  }
+
   // Display results
   $('#search').click(function() {
-    $('ul.searchResult').empty();
-    $.each(arrBookmarks, function(key, bookmark) {
-      if (bookmark.category.indexOf($('#keyword').val()) > -1) {
-        $('.searchResult').append('<li><a href="' + bookmark.url +
-          '">' + bookmark.name + '</a></li>');
-      }
-    });
+    displayResult();
+  });
+
+  $('#keyword').keydown(function(event) {
+    if (event.keyCode == 13) {
+      displayResult();
+    }
   });
 
 });
