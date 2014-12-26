@@ -464,10 +464,14 @@
       "name": "30+ Creative resume cv html templates",
       "url": "http://www.freshdesignweb.com/creative-resume-templates.html",
       "category": "html5,template,source code,cv online,resume"
-    } , {
+    }, {
       "name": "gmaps.js",
       "url": "http://hpneo.github.io/gmaps/",
       "category": "javascript plugin,plugin javascript,javascript library,google maps api"
+    }, {
+      "name": "MixItUp - Great for managing content like portfolios, galleries and blogs",
+      "url": "https://mixitup.kunkalabs.com/",
+      "category": "javascript plugin,plugin javascript,javascript library,portfolio"
     }
 
   ]
