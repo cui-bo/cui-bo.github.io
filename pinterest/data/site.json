@@ -33,6 +33,13 @@
     "site_url_git": "http://cui-bo.github.io/bookmark/",
     "site_url_jspractice": "http://jspractice.com/bookmark/",
     "img_name": "bookmark.png",
-    "site_desc": "My Bookmark !"
+    "site_desc": "My Bookmark ! Support autocomplete and keyword suggest."
+  }, {
+    "site_name": "CV_fr",
+    "site_short_url": "/cv/fr",
+    "site_url_git": "http://cui-bo.github.io/cv/fr/",
+    "site_url_jspractice": "http://jspractice.com/cv/fr",
+    "img_name": "cv_fr.png",
+    "site_desc": "Mon cv en francais."
   }]
 }
