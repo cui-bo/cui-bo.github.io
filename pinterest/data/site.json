@@ -1,10 +1,10 @@
 {
   "sites": [{
-    "site_name": "Alias",
-    "site_short_url": "/alias",
-    "site_url_git": "http://cui-bo.github.io/alias/",
-    "site_url_jspractice": "http://jspractice.com/alias/",
-    "img_name": "alias.png",
+    "site_name": "Demo",
+    "site_short_url": "/demo",
+    "site_url_git": "http://cui-bo.github.io/demo/",
+    "site_url_jspractice": "http://jspractice.com/demo/",
+    "img_name": "demo.png",
     "site_desc": "A demo site. Original idea from ALIAS."
   }, {
     "site_name": "Puzzle",
