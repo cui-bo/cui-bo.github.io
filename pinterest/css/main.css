@@ -1,12 +1,32 @@
 body {
-	background: url(http://subtlepatterns.com/patterns/scribble_light.png) ;
+	background: url('http://www.demo.amitjakhu.com/login-form/images/bg.png');
+	font-size: 11px;
+	font-family: 'Open Sans', sans-serif;
+	color: #4A4A4A ;
+	text-align: center;
 }
 
-#wrapper {
+/*#wrapper {
 	width: 90%;
 	max-width: 1100px;
 	min-width: 800px;
 	margin: 50px auto;
+}*/
+
+#wrap {  
+	margin: 20px auto;
+	display: block;
+	width: 300px;
+	height: 310px;
+	padding:20px;
+
+	background: #f3f3f3;
+	border: 1px solid #fff;
+	border-radius: 5px;
+
+	box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
 #columns {
