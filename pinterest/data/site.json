@@ -41,5 +41,12 @@
     "site_url_jspractice": "http://jspractice.com/cv/fr",
     "img_name": "cv_fr.png",
     "site_desc": "Mon cv en francais."
+  }, {
+    "site_name": "Timer",
+    "site_short_url": "/timer",
+    "site_url_git": "http://cui-bo.github.io/timer/",
+    "site_url_jspractice": "http://jspractice.com/timer",
+    "img_name": "timer.png",
+    "site_desc": "A timer animation in html5 and javascript."
   }]
 }
