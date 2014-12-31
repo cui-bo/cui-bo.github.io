@@ -488,6 +488,10 @@
       "name": "Current Git branch name in command prompt",
       "url": "http://martinvalasek.com/blog/current-git-branch-name-in-command-prompt",
       "category": "git, git configuration"
+    }, {
+      "name": "JavaScript 运行机制详解：再谈Event Loop",
+      "url": "http://www.ruanyifeng.com/blog/2014/10/event-loop.html",
+      "category": "javascript,javascript event loop"
     }
 
   ]
