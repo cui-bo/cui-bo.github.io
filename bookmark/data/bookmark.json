@@ -480,6 +480,10 @@
       "name": "8个引人注目的HTML5/jQuery动画插件",
       "url": "http://www.codeceo.com/article/8-html5-jquery-animation.html",
       "category": "html5,jquery,source code"
+    }, {
+      "name": "学习Javascript闭包（Closure）",
+      "url": "http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html",
+      "category": "javascript,closure"
     }
 
   ]
