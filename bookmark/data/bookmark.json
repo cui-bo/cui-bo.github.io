@@ -484,6 +484,10 @@
       "name": "学习Javascript闭包（Closure）",
       "url": "http://www.ruanyifeng.com/blog/2009/08/learning_javascript_closures.html",
       "category": "javascript,closure"
+    }, {
+      "name": "Current Git branch name in command prompt",
+      "url": "http://martinvalasek.com/blog/current-git-branch-name-in-command-prompt",
+      "category": "git, git configuration"
     }
 
   ]
