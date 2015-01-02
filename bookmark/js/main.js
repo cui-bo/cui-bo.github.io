@@ -13,13 +13,9 @@ $(document).ready(function() {
       $.each(data.bookmarks, function(key, bookmark) {
         var strCategory = bookmark.category;
         var categories = strCategory.split(',');
-        
-        categories = categories.filter(function(str){
-  console.log(str);
-          return str.trim();  // Remove the whitespace
-        });
- console.log(categories);
+
         $.each(categories, function(key, category) {
+          category = category.trim(); // Remove the whitespace
           if (jQuery.inArray(category, arrBookmarkCategory) ==
             -1) {
             arrBookmarkCategory.push(category);
