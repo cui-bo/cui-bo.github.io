@@ -23,7 +23,7 @@
     }, {
       "name": "光明网",
       "url": "http://www.gmw.cn",
-      "category": "site,news"
+      "category": "news"
     }, {
       "name": "我为什么不要应届毕业生: 大学生到底被谁抛弃",
       "url": "http://xy.eywedu.com/endeavourers/E/%E6%88%91%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E8%A6%81%E5%BA%94%E5%B1%8A%E6%AF%95%E4%B8%9A%E7%94%9F%EF%BC%9A%E5%A4%A7%E5%AD%A6%E7%94%9F%E5%88%B0%E5%BA%95%E8%A2%AB%E8%B0%81%E6%8A%9B%E5%BC%83/index.htm",
@@ -31,11 +31,11 @@
     }, {
       "name": "小学语文资源网",
       "url": "http://xy.eywedu.com",
-      "category": "site,ressource"
+      "category": "ressource"
     }, {
       "name": "凤凰读书",
       "url": "http://v.book.ifeng.com/shuku.htm?yc=1&f_cate=6&s_cate=31&t_cate=132&fee=0&o_type=3",
-      "category": "site,ressource,ebook,book,reading"
+      "category": "ressource,ebook,book,reading"
     }, {
       "name": "沪江英语",
       "url": "http://www.hjenglish.com/new/fanyiyuedu/",
@@ -187,7 +187,7 @@
     }, {
       "name": "TED",
       "url": "http://www.ted.com",
-      "category": "site,edu,online,online course,idea"
+      "category": "edu,online,online course,idea"
     }, {
       "name": "Iana-Root Zone Database",
       "url": "http://www.iana.org/domains/root/db",
@@ -203,15 +203,15 @@
     }, {
       "name": "37signals",
       "url": "http://37signals.com",
-      "category": "site,idea,it"
+      "category": "idea,it"
     }, {
       "name": "basecamp-project management app",
       "url": "https://basecamp.com",
-      "category": "site,idea,it"
+      "category": "idea,it"
     }, {
       "name": "6 Phases of the Web Site Design and Development Process | iDesign Studios",
       "url": "http://www.idesignstudios.com/blog/web-design/phases-web-design-development-process/#.VJtQhp0A0",
-      "category": "site,it,idea"
+      "category": "it,idea"
     }, {
       "name": "How To Create Your First iPhone App (2012 Edition) | Smashing Mobile",
       "url": "http://www.smashingmagazine.com/2009/08/11/how-to-create-your-first-iphone-application/",
@@ -259,11 +259,11 @@
     }, {
       "name": "iteye",
       "url": "http://www.iteye.com",
-      "category": "site,it"
+      "category": "it"
     }, {
       "name": "CocoaChina 苹果开发中文站",
       "url": "http://www.cocoachina.com",
-      "category": "site,it,cocoa"
+      "category": "it,cocoa"
     }, {
       "name": "IOS source code example",
       "url": "http://code4app.net",
@@ -311,11 +311,11 @@
     }, {
       "name": "中国IT技术网站",
       "url": "http://www.51cto.com",
-      "category": "it,learn,site"
+      "category": "it,learn"
     }, {
       "name": "Foundation-The most advanced responsive front-end framework in the world",
       "url": "http://foundation.zurb.com",
-      "category": "it,site"
+      "category": "it"
     }, {
       "name": "全代码打造简洁美观回到顶部按钮",
       "url": "http://blog.wpjam.com/m/pure-code-4-back-2-top/",
@@ -351,7 +351,7 @@
     }, {
       "name": "极客公园",
       "url": "http://www.geekpark.net",
-      "category": "it,site,news"
+      "category": "it,news"
     }, {
       "name": "SDC设计师网址导航 - 学设计从这里开始",
       "url": "http://hao.uisdc.com",
