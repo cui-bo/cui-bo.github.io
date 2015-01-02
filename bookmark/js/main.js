@@ -13,6 +13,10 @@ $(document).ready(function() {
       $.each(data.bookmarks, function(key, bookmark) {
         var strCategory = bookmark.category;
         var categories = strCategory.split(',');
+        
+        categories = categories.filter(function(str){
+          return str.trim();  // Remove the whitespace
+        });
 
         $.each(categories, function(key, category) {
           if (jQuery.inArray(category, arrBookmarkCategory) ==
