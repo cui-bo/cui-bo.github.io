@@ -107,7 +107,7 @@
     }, {
       "name": "DMOZ - the Open Directory Project",
       "url": "http://www.dmoz.org",
-      "category": "it,com"
+      "category": "it"
     }, {
       "name": "Architecture interne du serveur Apache",
       "url": "http://wawadeb.crdp.ac-caen.fr/iso/tmp/ressources/linux/reseau/www.laissus.fr/cours/node182.html",
@@ -496,6 +496,10 @@
       "name": "Js slides-based presentations",
       "url": "http://bartaz.github.io/impress.js/#/bored",
       "category": "javascript plugin,plugin javascript,javascript library"
+    }, {
+      "name": "Tweet Digital",
+      "url": "http://tweet-digital.com",
+      "category": "it"
     }
 
   ]
