@@ -512,6 +512,10 @@
       "name": "中国科技论文在线",
       "url": "http://www.paper.edu.cn",
       "category": "论文"
+    }, {
+      "name": "iCould - Find My iPhone",
+      "url": "https://www.icloud.com/#find",
+      "category": "find iphone"
     }
 
   ]
