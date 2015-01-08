@@ -525,7 +525,7 @@
       "url": "https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-an-ubuntu-14-04-server",
       "category": "it,nodejs"
     }, {
-      "name": "Java 8 optional example",
+      "name":"Java 8 optional example",
       "url": "http://examples.javacodegeeks.com/core-java/util/optional/java-8-optional-example/",
       "category": "it,java8,optional"
     }
