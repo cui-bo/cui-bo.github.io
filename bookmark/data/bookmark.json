@@ -520,6 +520,10 @@
       "name": "Recrutement développeur web : comment sortir du lot (cv, lettre de motivation)",
       "url": "http://viserlalune.com/blog/recrutement-développeur-web-comment-sortir-du-lot-cv-lettre-de-motivation/",
       "category": "it,cv,lettre de motivation,recrutement"
+    }, {
+      "name": "How To Install Node.js on an Ubuntu 14.04 server",
+      "url": "https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-an-ubuntu-14-04-server",
+      "category": "it,nodejs"
     }
 
   ]
