@@ -1,54 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-		<meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+---
+layout: default
+---
 
-    <title>Login</title>
-    <meta name="description" content="login" />
-    <meta name="keywords" content="css3, login, form, custom, input, submit, button, html5, placeholder" />
-    <meta name="author" content="bo" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="login/css/style.css" />
-		<script src="login/js/modernizr.custom.63321.js"></script>
-    <script src="login/js/main.js"></script>
+<div class="home">
 
-		<!--[if lte IE 7]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
-    </head>
-    <body>
-        <div class="container">
+  <h1 class="page-heading">Posts</h1>
 
-    			<header>
-    				<h1><strong>Bo's</strong> sites</h1>
-    				<h2>Developpment can be a hobby, so does here  :)</h2>
-            <h2>To welcome you, here is login and password : "bo" for the 2.</h2>
-            <h2>You can find my sites: demo, cv, bookmark etc.</h2>
-            <h2>If you want to follow my activities, thank you to follow my blog :
-              <strong>
-                <a href="http://cuiborails.wordpress.com">cuiborails.wordpress.com</a>
-              </strong>
-            </h2>
-    			</header>
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
-    			<section class="main">
-    				<div class="form-1">
-    					<p class="field">
-    						<input type="text" name="login" placeholder="Username">
-    						<i class="icon-user icon-large"></i>
-    					</p>
-    					<p class="field">
-    							<input type="password" name="password" placeholder="Password">
-    							<i class="icon-lock icon-large"></i>
-    					</p>
-    					<p class="submit">
-    						<button type="submit" name="submit" id="submit">
-                  <i class="icon-arrow-right icon-large"></i>
-                </button>
-    					</p>
-    				</div>
-    			</section>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
 
-        </div>
-    </body>
-</html>
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
