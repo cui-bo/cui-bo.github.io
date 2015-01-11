@@ -1,10 +1,11 @@
 # Site settings
-title: Bo's site
-email: cupidcb@gmail.com
+title: Bo's personal site
+email: cupidcb[at]gmail[dot]com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Developpment can be a hobby, so does it for me  :)
+  You can find my sites: demo, cv, bookmark etc.
+  If you want to follow my activities, find in my blog :
+  cuiborails.wordpress.com
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://cui-bo.github.io" # the base hostname & protocol for your site
 twitter_username: cupidcb
