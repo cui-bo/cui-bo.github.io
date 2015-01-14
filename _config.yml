@@ -13,3 +13,6 @@ github_username:  cui-bo
 
 # Build settings
 markdown: kramdown
+
+include:
+  - _data

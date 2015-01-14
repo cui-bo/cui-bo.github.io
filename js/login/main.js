@@ -1,20 +1,16 @@
 $(document).ready(function() {
-  var arrUsers = [];
+ var arrUsers = [];
   // Get users
-  // $.ajax({
-  // 	url: "login/data/users.json",
-  // 	async: false,
-  // 	dataType: 'json',
-  // 	success: function(data) {
-  // 		$.each(data.users, function(key, user) {
-  // 			arrUsers.push(user);
-  // 		});
-  // 	}
-  // });
-  arrUsers = [{
-    'username': 'bo',
-    'password': 'bo'
-  }];
+   $.ajax({
+   	url: "_data/users.json",
+   	async: false,
+   	dataType: 'json',
+   	success: function(data) {
+   		$.each(data.users, function(key, user) {
+   			arrUsers.push(user);
+   		});
+   	}
+   });
 
   var validLogin = function() {
     var inputUsername = $('input[name="login"]').val();
