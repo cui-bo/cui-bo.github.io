@@ -16,3 +16,4 @@ markdown: kramdown
 
 include:
   - _data
+  - bookmark
