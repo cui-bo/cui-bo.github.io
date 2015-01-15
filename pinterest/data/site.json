@@ -1,0 +1,52 @@
+{
+  "sites": [{
+    "site_name": "Demo",
+    "site_short_url": "/demo",
+    "site_url_git": "http://cui-bo.github.io/demo/",
+    "site_url_jspractice": "http://jspractice.com/demo/",
+    "img_name": "demo.png",
+    "site_desc": "A demo site. Original idea from ALIAS."
+  }, {
+    "site_name": "Puzzle",
+    "site_short_url": "/puzzle",
+    "site_url_git": "http://cui-bo.github.io/puzzle/",
+    "site_url_jspractice": "http://jspractice.com/puzzle/",
+    "img_name": "puzzle.png",
+    "site_desc": "The site of a puzzle. Be care, this site not support for mobile. To be improved!"
+  }, {
+    "site_name": "Sudoku",
+    "site_short_url": "/sudoku",
+    "site_url_git": "http://cui-bo.github.io/sudoku/",
+    "site_url_jspractice": "http://jspractice.com/sudoku/",
+    "img_name": "sudoku.png",
+    "site_desc": "Sudoku solver !"
+  }, {
+    "site_name": "Auto Scroll",
+    "site_short_url": "/scroll",
+    "site_url_git": "http://cui-bo.github.io/scroll/",
+    "site_url_jspractice": "http://jspractice.com/scroll/",
+    "img_name": "scroll.png",
+    "site_desc": "Atuo Scroll !"
+  }, {
+    "site_name": "Bookmark",
+    "site_short_url": "/bookmark",
+    "site_url_git": "http://cui-bo.github.io/bookmark/",
+    "site_url_jspractice": "http://jspractice.com/bookmark/",
+    "img_name": "bookmark.png",
+    "site_desc": "My Bookmark ! Support autocomplete and keyword suggest."
+  }, {
+    "site_name": "CV_fr",
+    "site_short_url": "/cv/fr",
+    "site_url_git": "http://cui-bo.github.io/cv/fr/",
+    "site_url_jspractice": "http://jspractice.com/cv/fr",
+    "img_name": "cv_fr.png",
+    "site_desc": "Mon cv en francais."
+  }, {
+    "site_name": "Timer",
+    "site_short_url": "/timer",
+    "site_url_git": "http://cui-bo.github.io/timer/",
+    "site_url_jspractice": "http://jspractice.com/timer",
+    "img_name": "timer.png",
+    "site_desc": "A timer animation in html5 and javascript."
+  }]
+}

@@ -19,7 +19,8 @@ $(document).ready(function() {
     $.each(arrUsers, function(key, user) {
       if ((user.username == inputUsername) && (user.password ==
           inputPassword)) {
-        window.location.replace('pinterest/index.html');
+        //window.location.replace('pinterest/index.html');
+        window.location.replace('pinterest/');
         //window.location.replace('http://cuiborails.wordpress.com');
       }
     });
