@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>C'est BON</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Datatable -->
+	<link rel="stylesheet" href="http://cdn.datatables.net/1.10.5/css/jquery.dataTables.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+		<ul class="nav nav-tabs">
+			<li class="active"><a href="#">Article/Service</a></li>
+			<li><a href="#">Cab</a></li>
+		</ul>
+		
+		<div class="content">
+			<!-- La partie gauche -->
+			<div class="col-xs-6 col-lg-4">
+				<!-- Champ de recherche -->
+				<div class="row">
+				    <div class="input-group">
+				      <span class="input-group-btn">
+				        <button class="btn btn-default" type="button">
+							<span class="glyphicon glyphicon-search"></span>
+						</button>
+				      </span>
+				      <input type="text" class="form-control" placeholder="Recherche un ocde ou un libellé">
+				    </div><!-- /input-group -->
+				</div><!-- /.row -->
+				
+				<!-- Datatable -->
+				<table id="datatable" class="display" cellspacing="0" width="100%">
+			        <thead>
+			            <tr>
+			                <th>IDT ou IDS</th>
+			                <th>Libellé</th>
+			            </tr>
+			        </thead>
+			 
+			        <tbody>
+			            <tr>
+			                <td>071</td>
+			                <td>3C</td>
+			            </tr>
+			            <tr>
+			                <td>Alliage Premium Destruction</td>
+			                <td>LRP avec AR</td>
+			            </tr>
+			        </tbody>
+			    </table>
+				
+			</div>
+			
+			
+			
+			<!-- La partie droite -->
+			<div class="col-xs-12 col-sm-6 col-lg-8 align-vertical">
+			
+				<!-- Liste des boutons -->
+				<div class="col-lg-6">
+					<button type="button" class="btn btn-default pull-left">Nouveau</button>
+					<button type="button" class="btn btn-default pull-left">Dupliquer</button>
+				</div>
+				<div class="col-lg-6">
+					<button type="button" class="btn btn-primary pull-right">Enregistrer</button>
+					<button type="button" class="btn btn-default pull-right">Supprimer</button>
+				</div>
+				
+				
+				<!-- Description -->
+				<div class="col-lg-12 scrollable">
+					
+					<div class="row">
+						<!-- Type produit -->
+						<div class="col-md-7 align-vertical">
+							<div class="form-inline">
+								<div class="form-group">
+									<label for="" class="control-label">Type produit :</label>
+									<div class="radio">
+								    	<label><input type="radio" name="optradio">IDS</label>
+								    </div>
+								    <div class="radio">
+								    	<label><input type="radio" name="optradio">IDT</label>
+								    </div>
+								    <label for="" class="control-label">Code : </label>
+								    <input type="text" class="form-control" placeholder="3C">
+								</div>
+							</div>
+						</div>
+						
+						<!-- Libellé -->
+						<div class="col-md-5 align-vertical">
+							<div class="form-inline">
+								<div class="form-group">
+									<label for="" class="control-label">Libellé :</label>
+								    <input type="text" class="form-control" placeholder="LRP avec AR">
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-md-7 align-vertical">
+							<div class="form-inline">
+								<div class="form-group">
+									<label for="" class="control-label">gamme Trafic :</label>
+								    <input type="text" class="form-control" placeholder="Remise en main propre" size="36">
+								</div>
+							</div>
+						</div>
+						<div class="col-md-5 align-vertical">
+							<div class="form-inline">
+								<div class="form-group">
+									<label for="" class="control-label">libelleGamme :</label>
+								    <input type="text" class="form-control" placeholder="SIGNE - lettre recommandée">
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<div class="row">
+						<div class="col-md-7 align-vertical">
+							<div class="input-append btn-group">
+								<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+        							failleArticle : <span class="caret"></span>
+        						</button>
+							    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+							        <li><a href="#"><i class="icon-pencil"></i> Signé</a></li>
+							        <li><a href="#"><i class="icon-trash"></i> Sécurité</a></li>
+							        <li><a href="#"><i class="icon-ban-circle"></i> Suivi</a></li>
+							    </ul>
+							</div>
+						</div>
+						<div class="col-md-5 align-vertical">
+							<div class="input-append btn-group">
+								<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+        							typeCAB : <span class="caret"></span>
+        						</button>
+							    <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+							        <li><a href="#"><i class="icon-pencil"></i> CAB 128</a></li>
+							    </ul>
+							</div>
+						</div>
+					</div>
+				
+				
+					<!-- Accordion -->
+					<div class="col-lg-12">
+						<div class="accordion">
+							<div class="panel-group" id="accordion">
+								<div class="panel panel-default">
+						            <div class="panel-heading">
+						                <h4 class="panel-title">
+						                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Traceo/WT</a>
+						                </h4>
+						            </div>
+						            <div id="collapseOne" class="panel-collapse collapse in">
+						                <div class="panel-body">
+						                    <p>Contenu</a></p>
+						                </div>
+						            </div>
+						        </div>
+						        <div class="panel panel-default">
+						            <div class="panel-heading">
+						                <h4 class="panel-title">
+						                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">Courrier</a>
+						                </h4>
+						            </div>
+						            <div id="collapseOne" class="panel-collapse collapse in">
+						                <div class="panel-body">
+						                	<div class="form-inline">
+												<div class="form-group">
+													<label for="" class="control-label align-label-right">category :</label>
+													<label class="checkbox-inline"><input type="checkbox" value="">LIGNE 0</label>
+													<label class="checkbox-inline"><input type="checkbox" value="" checked>COURRIER TRACE</label>
+													<label class="checkbox-inline"><input type="checkbox" value="">IDS</label>
+													<label class="checkbox-inline"><input type="checkbox" value="" checked>IDT</label>
+												</div>
+											</div>
+						                </div>
+						            </div>
+						        </div>
+						        <div class="panel panel-default">
+						            <div class="panel-heading">
+						                <h4 class="panel-title">
+						                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">Coli</a>
+						                </h4>
+						            </div>
+						            <div id="collapseTwo" class="panel-collapse collapse">
+						                <div class="panel-body">
+						                    <p>Contenu du coli.</p>
+						                </div>
+						            </div>
+						        </div>
+						        <div class="panel panel-default">
+						            <div class="panel-heading">
+						                <h4 class="panel-title">
+						                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">Marketing</a>
+						                </h4>
+						            </div>
+						            <div id="collapseThree" class="panel-collapse collapse">
+						                <div class="panel-body">
+						                    <p>Contenu du marketing</p>
+						                </div>
+						            </div>
+						        </div>
+						        <div class="panel panel-default">
+						            <div class="panel-heading">
+						                <h4 class="panel-title">
+						                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">Autre</a>
+						                </h4>
+						            </div>
+						            <div id="collapseFour" class="panel-collapse collapse">
+						                <div class="panel-body">
+						                    <p>Autre contenu</p>
+						                </div>
+						            </div>
+						        </div>
+						    </div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!-- Datatable -->
+    <script src="http://cdn.datatables.net/1.10.5/js/jquery.dataTables.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
