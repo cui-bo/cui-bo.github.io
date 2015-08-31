@@ -45,8 +45,13 @@ console.log(eachPay);
         $('#out'+i).text(0);
       } else if (c < eachPay) {
         var out = eachPay - c;
-        $('#in'+i).text(0);
-        $('#out'+i).text(out.toFixed(2));
+        if(i== 3) {
+          $('#in'+i).text(0);
+          $('#out'+i).text(out.toFixed(2) * 2);
+        } else {
+          $('#in'+i).text(0);
+          $('#out'+i).text(out.toFixed(2));
+        }
       } else {
         $('#in'+i).text(0);
         $('#out'+i).text(0);
