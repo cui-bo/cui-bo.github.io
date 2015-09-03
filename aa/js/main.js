@@ -2,7 +2,7 @@
 $(document).ready(function() {
 
   totalCost = 0;
-  totalPerson = 7;
+  totalPerson = 8;
   function calculTotal() {
     // Total Cost
     $.ajax({
