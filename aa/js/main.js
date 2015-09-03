@@ -32,6 +32,7 @@ $(document).ready(function() {
     eachPay = totalCost / totalPerson;
     eachPay = eachPay.toFixed(2);
 console.log(eachPay);
+    $('#eachPay').text(eachPay);
     for(i = 1; i <= totalPerson; i++) {
       $('#in'+i).text();
       $('#out'+i).text();
