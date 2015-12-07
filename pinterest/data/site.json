@@ -48,5 +48,12 @@
     "site_url_jspractice": "http://jspractice.com/timer",
     "img_name": "timer.png",
     "site_desc": "A timer animation in html5 and javascript."
+  }, {
+    "site_name": "EuroMillions",
+    "site_short_url": "/euromillions",
+    "site_url_git": "http://cui-bo.github.io/euromillions/",
+    "site_url_jspractice": "http://jspractice.com/euromillions",
+    "img_name": "euromillions.png",
+    "site_desc": "Generate random numbers for EuroMillions"
   }]
 }
