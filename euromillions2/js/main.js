@@ -1,22 +1,38 @@
 $(document).ready(function(){
 
-      //$('.grid').
-        for (var j = 1;  j <= 50; j++) {
-          $('#selectable').after('<li class="ui-state-default" id="'+j+'">'+j+'</li>');
-        }
+	var str = "";
+    for (var j = 1;  j <= 50; j++) {
+	  str += '<li class="ui-state-default" id="'+j+'">'+j+'</li>';
+    }
+	
+	$("#selectable").append(str);
 
-
-      //$( "#selectable" ).selectable();
-
+    // Construire les mauvais numéros
+    var tab = [];
+    $("li").click(function(){
+        $("#" + this.id).addClass('ui-selected');
+        tab.push(this.id);
+    });
 
       function getRandomNumber(range, limit) {
-        var arr = []
+        var arr = [];
+
         while(arr.length < limit){
-          var randomnumber=Math.ceil(Math.random()*range)
-          var found=false;
-          for(var i=0;i<arr.length;i++){
-        	if(arr[i]==randomnumber){found=true;break}
-          }
+          var randomnumber=Math.ceil(Math.random()*range);
+            var found=false;
+
+            if($.inArray(randomnumber.toString(), tab) != -1) {
+                found=true;
+            }
+
+            if (!found) {
+                for(var i=0;i<arr.length;i++){
+                    if(arr[i]==randomnumber){
+                        found=true;break;
+                    }
+                }
+            }
+
           if(!found)arr[arr.length]=randomnumber;
         }
         return arr;
