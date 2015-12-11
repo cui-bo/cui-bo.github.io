@@ -10,7 +10,7 @@ li.ball {
     background: url(../img/ball-sprite.png) transparent 0 0 no-repeat;
     overflow: hidden;
     float: left;
-    height: 42px;
+    height: 55px;
     width: 55px;
     text-align: center;
     color: white;
@@ -32,7 +32,7 @@ li.star {
     background: url(../img/ball-sprite.png) transparent 0 -58px no-repeat;
     overflow: hidden;
     float: left;
-    height: 42px;
+    height: 55px;
     width: 55px;
     text-align: center;
     color: black;
