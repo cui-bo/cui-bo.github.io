@@ -1,0 +1,77 @@
+ul.balls {
+    float: left;
+    overflow: hidden;
+    margin: 20px 0 10px 10px;
+    width: 650px;
+    list-style-type: none;
+}
+
+li.ball {
+    background: url(../img/ball-sprite.png) transparent 0 0 no-repeat;
+    overflow: hidden;
+    float: left;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 2px;
+    padding: 15px 0 0 0;
+}
+
+ul.stars {
+    float: left;
+    overflow: hidden;
+    margin: 20px 0 10px 10px;
+    width: 650px;
+    list-style-type: none;
+}
+
+li.star {
+    background: url(../img/ball-sprite.png) transparent 0 -58px no-repeat;
+    overflow: hidden;
+    float: left;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 2px;
+    padding: 15px 0 0 0;
+}
+
+#grid {
+    margin: 10px;
+    display: block;
+}
+
+#selectable .ui-selecting {
+    background: #FECA40;
+}
+
+#selectable .ui-selected {
+    background: #F39814;
+    color: white;
+}
+
+#selectable {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 420px;
+}
+
+#selectable li {
+    margin: 3px;
+    padding: 1px;
+    float: left;
+    width: 30px;
+    height: 20px;
+    font-size: 1em;
+    text-align: center;
+    cursor: pointer;
+}
+  
+
