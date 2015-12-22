@@ -1,14 +1,4 @@
 $(document).ready(function(){
-/*
-    $.ajax({
-        type:"GET",
-        url:"data/euromillions.csv",
-        dataType:"json",
-        success:function(data) {
-            console.log(data);
-        }
-    });
-//*/
 
     $("#chiffre").click(function() {
         $.ajax({
@@ -92,6 +82,14 @@ $(document).ready(function(){
                     tabEtoile.push(sortedRetourEtoile[i][0]);
                 }
 
+                // random
+                tabChiffre = tabChiffre.sort(function() {
+                  return .5 - Math.random();
+                });
+                tabEtoile = tabEtoile.sort(function() {
+                  return .5 - Math.random();
+                });
+
                 // Affichier les boules sur html
                 var ball = '';
                 for (var i = 0; i < tabChiffre.length; i++) {
@@ -113,9 +111,5 @@ $(document).ready(function(){
                 console.log("Error occured");
             }
         });
-
-
     });
-
-
 });

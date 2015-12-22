@@ -3,3 +3,7 @@ Just for fun !
 Les projets d'euromillions sont que pour s'amuser avec mes collguès.
 
 C'est la 4ème version,
+à partir d'un fichier CSV des historiques d'euromillions de 2004 à 2011.
+
+L'appllication permet de calculer le nombre d'occurence de chaque chiffre et les trier par cette occurence.
+Les boules et des étoiles affichiés sont celles de l'occurence de moins de 10 et 4.
