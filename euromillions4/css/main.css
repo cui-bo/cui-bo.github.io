@@ -14,8 +14,9 @@ ul.balls {
     float: left;
     overflow: hidden;
     margin: 20px 0 10px 10px;
-    width: 650px;
+    width: 300px;
     list-style-type: none;
+    padding:20px 0;
 }
 
 li.ball {
@@ -36,8 +37,9 @@ ul.stars {
     float: left;
     overflow: hidden;
     margin: 20px 0 10px 10px;
-    width: 650px;
+    width: 140px;
     list-style-type: none;
+    padding:20px 0;
 }
 
 li.star {

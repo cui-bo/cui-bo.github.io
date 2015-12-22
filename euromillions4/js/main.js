@@ -24,6 +24,8 @@ $(document).ready(function(){
                     var line = csv[i][0];                   // chaque ligne de csv
                     var tab = line.split(";");              // split chaque ligne par ;
 
+
+                    // Pour remplir l'objet de retour
                     if (typeof tab !== 'undefined' && tab.length > 0) {
 
                         for (var a=1; a<6; a++) {
@@ -76,14 +78,43 @@ $(document).ready(function(){
                     newHTML2.push('<span style="color:red">' + value[0] + ' </span> - <span style="color:blue">' + value[1] + '</span><br>');
                 });
 
-
                 $("#result1").html(newHTML.join(' '));
                 $("#result2").html(newHTML2.join(' '));
+
+
+                // Récupérer les 10 premiers chiffres et 4 premiers étoiles
+                var tabChiffre = [],
+                    tabEtoile = [];
+                for (var i=0; i< 10; i++) {
+                    tabChiffre.push(sortedRetourChiffre[i][0]);
+                }
+                for (var i=0; i< 4; i++) {
+                    tabEtoile.push(sortedRetourEtoile[i][0]);
+                }
+
+                // Affichier les boules sur html
+                var ball = '';
+                for (var i = 0; i < tabChiffre.length; i++) {
+                    ball = ball.concat('<li class="ball">' + tabChiffre[i] + '</li>');
+                }
+                $(".balls").html(ball);
+
+
+                // Affichier les étoiles sur html
+                var star = '';
+                for (var i = 0; i < tabEtoile.length; i++) {
+                    star = star.concat('<li class="star">' + tabEtoile[i] + '</li>');
+                }
+                $(".stars").html(star);
+
+
             },
             error:function() {
                 console.log("Error occured");
             }
         });
+
+
     });
 
 
