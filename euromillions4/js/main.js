@@ -57,19 +57,28 @@ $(document).ready(function(){
                     return a[1] - b[1];
                 });
 
+                var sortedRetourEtoile = [];
+                for (var indice in retourEtoile){
+                    sortedRetourEtoile.push([indice, retourEtoile[indice]]);
+                }
+                sortedRetourEtoile.sort(function(a, b) {
+                    return a[1] - b[1];
+                });
+
                 // Pour l'affichage
-                var newHTML = [];
+                var newHTML = [], newHTML2 = [];
                 $.each(sortedRetourChiffre, function(index, value){
                     newHTML.push('<span style="color:red">' + value[0] + ' </span> - <span style="color:blue">' + value[1] + '</span><br>');
                 });
                 newHTML.push('<br><br>' );
 
-                $.each(retourEtoile, function(index, value){
-                    newHTML.push('<span style="color:red">' + index + ' </span> - <span style="color:blue">' + value + '</span><br>');
+                $.each(sortedRetourEtoile, function(index, value){
+                    newHTML2.push('<span style="color:red">' + value[0] + ' </span> - <span style="color:blue">' + value[1] + '</span><br>');
                 });
 
 
                 $("#result1").html(newHTML.join(' '));
+                $("#result2").html(newHTML2.join(' '));
             },
             error:function() {
                 console.log("Error occured");
