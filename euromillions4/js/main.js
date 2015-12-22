@@ -23,54 +23,53 @@ $(document).ready(function(){
                 for (var i=1; i<csv.length; i++) {          // Boucle le tableau
                     var line = csv[i][0];                   // chaque ligne de csv
                     var tab = line.split(";");              // split chaque ligne par ;
-                    var num1 = tab[3], num2 = tab[4],
-                        num3 = tab[5], num4 = tab[6],
-                        num5 = tab[7];
-                    var star1 = tab[8], star2 = tab[9];
 
-                    if(!(num1 in retourChiffre)) {
-                        retourChiffre[num1] = 1;
-                    } else {
-                        retourChiffre[num1]++;
-                    }
-                    if(!(num2 in retourChiffre)) {
-                        retourChiffre[num2] = 1;
-                    } else {
-                        retourChiffre[num2]++;
-                    }
-                    if(!(num3 in retourChiffre)) {
-                        retourChiffre[num3] = 1;
-                    } else {
-                        retourChiffre[num3]++;
-                    }
-                    if(!(num4 in retourChiffre)) {
-                        retourChiffre[num4] = 1;
-                    } else {
-                        retourChiffre[num4]++;
-                    }
-                    if(!(num5 in retourChiffre)) {
-                        retourChiffre[num5] = 1;
-                    } else {
-                        retourChiffre[num5]++;
-                    }
+                    if (typeof tab !== 'undefined' && tab.length > 0) {
 
-                    if(!(star1 in retourEtoile)) {
-                        retourEtoile[star1] = 1;
-                    } else {
-                        retourEtoile[star1]++;
-                    }
+                        for (var a=1; a<6; a++) {
+                            var nom = tab[2+a];
 
-                    if(!(star2 in retourEtoile)) {
-                        retourEtoile[star2] = 1;
-                    } else {
-                        retourEtoile[star2]++;
+                            if (typeof retourChiffre[nom] === 'undefined') {
+                                retourChiffre[nom] = 1;
+                            } else {
+                                retourChiffre[nom]++;
+                            }
+                        }
+
+                        for (var a=1; a<3; a++) {
+                            var nom = tab[7+a];
+
+                            if (typeof retourEtoile[nom] === 'undefined') {
+                                retourEtoile[nom] = 1;
+                            } else {
+                                retourEtoile[nom]++;
+                            }
+                        }
                     }
                 }
-                console.log(retourChiffre);
-                console.log(retourEtoile);
 
-                $("#result1").text(JSON.stringify(retourChiffre));
-                $("#result2").text(JSON.stringify(retourEtoile));
+                // Pour trier
+                var sortedRetourChiffre = [];
+                for (var indice in retourChiffre){
+                    sortedRetourChiffre.push([indice, retourChiffre[indice]]);
+                }
+                sortedRetourChiffre.sort(function(a, b) {
+                    return a[1] - b[1];
+                });
+
+                // Pour l'affichage
+                var newHTML = [];
+                $.each(sortedRetourChiffre, function(index, value){
+                    newHTML.push('<span style="color:red">' + value[0] + ' </span> - <span style="color:blue">' + value[1] + '</span><br>');
+                });
+                newHTML.push('<br><br>' );
+
+                $.each(retourEtoile, function(index, value){
+                    newHTML.push('<span style="color:red">' + index + ' </span> - <span style="color:blue">' + value + '</span><br>');
+                });
+
+
+                $("#result1").html(newHTML.join(' '));
             },
             error:function() {
                 console.log("Error occured");
