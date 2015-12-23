@@ -55,5 +55,14 @@
     "site_url_jspractice": "http://jspractice.com/euromillions",
     "img_name": "euromillions.png",
     "site_desc": "Generate random numbers for EuroMillions"
-  }]
+  }, {
+    "site_name": "Periodic table",
+    "site_short_url": "/periodictable",
+    "site_url_git": "http://cui-bo.github.io/periodictable/",
+    "site_url_jspractice": "http://jspractice.com/periodictable",
+    "img_name": "periodictable.png",
+    "site_desc": "Periodic table in 3D"
+  }
+
+]
 }
