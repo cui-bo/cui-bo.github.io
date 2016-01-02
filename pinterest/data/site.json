@@ -62,6 +62,13 @@
     "site_url_jspractice": "http://jspractice.com/periodictable",
     "img_name": "periodictable.png",
     "site_desc": "Periodic table in 3D"
+  }, {
+    "site_name": "Floating Image",
+    "site_short_url": "/floating_image",
+    "site_url_git": "http://cui-bo.github.io/floating_image/",
+    "site_url_jspractice": "http://jspractice.com/floating_image",
+    "img_name": "floating_image.png",
+    "site_desc": "A web page with floating image"
   }
 
 ]

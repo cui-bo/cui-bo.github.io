@@ -1,0 +1,99 @@
+
+<!DOCTYPE HTML>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Float Image</title>
+
+<style>
+    *{padding:0;margin:0;}
+
+    img{border:none;}
+    a{text-decoration:none;}
+
+    #open {
+        background: url(img/cn-facai.gif);
+        width: 128px;height: 128px;
+    }
+</style>
+
+<script type="text/javascript">
+var step = 1;
+var speed = 30;
+var collection;
+var timers = null;
+
+function floaters_move(){
+    this.items = [];
+    this.addItem  = function(id,x,y,content){
+    document.write('<div id='+id+' style="z-index:2; position:absolute;">'+content+'</div>');
+        var newItem = {};
+        newItem.object = document.getElementById(id);
+        newItem.xPos = x;
+        newItem.yPos = y;
+        newItem.xon = 0;
+        newItem.yon = 0;
+        this.items[this.items.length] = newItem;
+    }
+    this.play = function(){
+        collection = this.items;
+        timers = setInterval('move_play()',speed);
+    }
+}
+
+function move_play(){
+    for(var i=0;i <collection.length;i++){
+        var followObj = collection[i].object;
+        var followObj_x = followObj.offsetWidth;
+        var followObj_y = followObj.offsetHeight;
+        var sLeft=Math.max(document.documentElement.scrollLeft,document.body.scrollLeft);
+        var sTop=Math.max(document.documentElement.scrollTop,document.body.scrollTop);
+        followObj.style.left = (collection[i].xPos + sLeft)+'px';
+        followObj.style.top = (collection[i].yPos + sTop)+'px';
+        if(collection[i].xon) collection[i].xPos += step;
+        else collection[i].xPos -= step;
+        if(collection[i].yon) collection[i].yPos += step;
+        else collection[i].yPos -= step;
+        if(collection[i].xPos >= (document.documentElement.clientWidth-followObj_x)){
+            collection[i].xon = 0;
+            collection[i].xPos = document.documentElement.clientWidth-followObj_x;
+        }
+        if(collection[i].xPos < 0){
+            collection[i].xon = 1;
+            collection[i].xPos = 0;
+        }
+        if(collection[i].yPos >= (document.documentElement.clientHeight-followObj_y)){
+            collection[i].yon = 0;
+            collection[i].yPos = document.documentElement.clientHeight-followObj_y;
+        }
+        if(collection[i].yPos < 0){
+            collection[i].yon = 1;
+            collection[i].yPos = 0;
+        }
+    }
+}
+
+var theFloaters_move = new floaters_move();
+theFloaters_move.addItem('myad',200,100,'<span style="float:left" id="open"></span>');
+theFloaters_move.play();
+
+var obj=document.getElementById('myad');
+
+var itl= setInterval("floaters_move()", speed);
+
+obj.onmouseover=function(){
+    clearInterval(timers);
+    if(itl!=null){
+        clearInterval(itl);
+    }
+}
+obj.onmouseout=function(){itl=setInterval("move_play()", speed)}
+
+</script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
