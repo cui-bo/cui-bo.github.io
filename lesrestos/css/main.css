@@ -1,9 +1,15 @@
 #map {
-  min-height: 400px;
-  min-width: 300px;
+    min-height: 400px;
+    min-width: 300px;
 }
 
 .list-group-item:hover {
-  background-color: yellow;
-  cursor: pointer;
+    cursor: pointer;
+}
+
+img#nav-img {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    margin: -8px 12px 0 2px;
 }

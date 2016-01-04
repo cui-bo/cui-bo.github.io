@@ -1,3 +1,4 @@
+      // Initialise map
       function initMap() {
           var map = new google.maps.Map(document.getElementById('map'), {
               center: {
@@ -18,6 +19,7 @@
           });
       }
 
+      // Rebuild map and add a pin marker
       function changePosition(latLng, zoom, title) {
           var map = new google.maps.Map(document.getElementById('map'), {
               zoom: zoom,
@@ -29,49 +31,48 @@
 
 
       $(document).ready(function() { // Jquery start
+          var restos;
 
-          // $.ajax({
-          //   type:"GET",
-          //   url:"data/restos.json",
-          //   dataType:"text",
-          //   success:function(data) {
-          //     console.log(data);
-          //   },
-          //   error:function() {
-          //       console.log("Error occured");
-          //   }
+          $.ajax({ // Ajax allows to get the restos data from a json file
+              type: "GET",
+              url: "data/restos.json",
+              dataType: "json",
+              success: function(data) {
+                  if (false === jQuery.isEmptyObject(data.restos)) {
+                      restos = data.restos;
+                      var htmlResto = '';
+                      $.each(restos, function(index, el) {
+                          htmlResto += '<li class="list-group-item" id="' + el.id + '">' + el.description + '</li>';
+                      });
+                      $("#restos").html(htmlResto);
 
-          // for (var i = restos.length - 1; i >= 0; i--) {
-          //     restos[i]
-          // };
+                      // Add mouse on hover effet 
+                      $("li.list-group-item").hover(function() {
+                          /* Stuff to do when the mouse enters the element */
+                          $(this).addClass('list-group-item-info');
+                      }, function() {
+                          /* Stuff to do when the mouse leaves the element */
+                          $(this).removeClass('list-group-item-info');
+                      });
 
-          $("#resto_1").click(function() {
-              changePosition({
-                  lat: 48.864,
-                  lng: 2.331
-              }, 16, "Resto SHU");
-          });
+                      // Add click listener 
+                      $("#restos li").click(function(event) {
+                          var idClicked = $(this).attr('id');
+                          var resto = $.grep(restos, function(e) {
+                              if (idClicked == e.id) {
+                                  return e;
+                              };
+                          });
 
-          $("#resto_2").click(function() {
-              changePosition({
-                  lat: 48.884,
-                  lng: 2.341
-              }, 16, "La Vache et le Cuisinier");
-          });
+                          // Rebuild the map
+                          changePosition(resto[0].position, resto[0].zoom, resto[0].description);
+                      });
 
-          $("#resto_3").click(function() {
-              changePosition({
-                  lat: 48.842,
-                  lng: 2.325
-              }, 16, "Les Grillades de Buenos Aires");
-          });
-
-          $("#resto_4").click(function() {
-              changePosition({
-                  lat: 48.862,
-                  lng: 2.309
-              }, 16, "Resto Thiou");
-          });
-
+                  };
+              },
+              error: function() {
+                  console.log("Error occured");
+              }
+          }); // Ajax end
 
       }); // Jquery end
