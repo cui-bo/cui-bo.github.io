@@ -1,68 +1,77 @@
-var map;
+      function initMap() {
+          var map = new google.maps.Map(document.getElementById('map'), {
+              center: {
+                  lat: 48.856,
+                  lng: 2.352
+              },
+              zoom: 6
+          });
+      }
 
-function initialize() {
-  var position = {
-    lat: 48.856,
-    lng: 2.352
-  };
-  map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 12,
-    center: position
-  });
+      // Adds a marker to the map.
+      function addMarker(location, map) {
+          // Add the marker at the clicked location, and add the next-available label
+          // from the array of alphabetical characters.
+          var marker = new google.maps.Marker({
+              position: location,
+              map: map
+          });
+      }
 
-}
-
-// Adds a marker to the map.
-function addMarker(location, map) {
-  // Add the marker at the clicked location, and add the next-available label
-  // from the array of alphabetical characters.
-  var marker = new google.maps.Marker({
-    position: location,
-    map: map
-  });
-}
-
-function changePosition(latLng, zoom, title) {
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: zoom,
-    center: latLng,
-    title: title
-  });
-  addMarker(latLng, map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
+      function changePosition(latLng, zoom, title) {
+          var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: zoom,
+              center: latLng,
+              title: title
+          });
+          addMarker(latLng, map);
+      }
 
 
-$(document).ready(function() { // Jquery start
+      $(document).ready(function() { // Jquery start
 
-  $("#paris").click(function() {
-    changePosition({
-      lat: 48.856,
-      lng: 2.352
-    }, 12, "paris");
-  });
+          // $.ajax({
+          //   type:"GET",
+          //   url:"data/restos.json",
+          //   dataType:"text",
+          //   success:function(data) {
+          //     console.log(data);
+          //   },
+          //   error:function() {
+          //       console.log("Error occured");
+          //   }
 
-  $("#londre").click(function() {
-    changePosition({
-      lat: 51.507,
-      lng: -0.127
-    }, 12, "londre");
-  });
+          // for (var i = restos.length - 1; i >= 0; i--) {
+          //     restos[i]
+          // };
 
-  $("#beijing").click(function() {
-    changePosition({
-      lat: 39.904,
-      lng: 116.407
-    }, 12, "bei jing");
-  });
+          $("#resto_1").click(function() {
+              changePosition({
+                  lat: 48.864,
+                  lng: 2.331
+              }, 16, "Resto SHU");
+          });
 
-  $("#resto_thiou").click(function() {
-    changePosition({
-      lat: 48.862,
-      lng: 2.309
-    }, 17, "Resto Thiou");
-  });
+          $("#resto_2").click(function() {
+              changePosition({
+                  lat: 48.884,
+                  lng: 2.341
+              }, 16, "La Vache et le Cuisinier");
+          });
+
+          $("#resto_3").click(function() {
+              changePosition({
+                  lat: 48.842,
+                  lng: 2.325
+              }, 16, "Les Grillades de Buenos Aires");
+          });
+
+          $("#resto_4").click(function() {
+              changePosition({
+                  lat: 48.862,
+                  lng: 2.309
+              }, 16, "Resto Thiou");
+          });
 
 
-}); // Jquery end
+      }); // Jquery end

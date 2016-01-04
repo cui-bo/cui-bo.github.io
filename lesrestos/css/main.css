@@ -1,53 +1,9 @@
-html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
 #map {
-  width: 50%;
-  height: 50%;
-  float: right;
+  min-height: 400px;
+  min-width: 300px;
 }
 
-#address {
-  width: 49%;
-  height: 50%;
-}
-
-#address p {
-  width: 99%;
-  min-height: inherit;
-}
-
-#address p:hover {
+.list-group-item:hover {
   background-color: yellow;
   cursor: pointer;
-}
-
-.controls {
-  margin-top: 10px;
-  border: 1px solid transparent;
-  border-radius: 2px 0 0 2px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  height: 32px;
-  outline: none;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-}
-
-#pac-input {
-  background-color: #fff;
-  font-family: Roboto;
-  font-size: 15px;
-  font-weight: 300;
-  margin-left: 12px;
-  padding: 0 11px 0 13px;
-  text-overflow: ellipsis;
-  width: 300px;
-}
-
-#pac-input:focus {
-  border-color: #4d90fe;
 }

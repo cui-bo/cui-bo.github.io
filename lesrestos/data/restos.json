@@ -1,0 +1,39 @@
+[{
+        "id": "resto_1",
+        "address": "",
+        "position": {
+            lat: 48.864,
+            lng: 2.331
+        },
+        "zoom": 16,
+        "description": "Resto SHU"
+    }, {
+        "id": "resto_2",
+        "address": "",
+        "position": {
+            lat: 48.884,
+            lng: 2.341
+        },
+        "zoom": 16,
+        "description": "La Vache et le Cuisinier"
+    }, {
+        "id": "resto_3",
+        "address": "",
+        "position": {
+            lat: 48.842,
+            lng: 2.325
+        },
+        "zoom": 16,
+        "description": "Les Grillades de Buenos Aires"
+    }, {
+        "id": "resto_4",
+        "address": "",
+        "position": {
+            lat: 48.862,
+            lng: 2.309
+        },
+        "zoom": 16,
+        "description": "Resto Thiou"
+    },
+
+]
