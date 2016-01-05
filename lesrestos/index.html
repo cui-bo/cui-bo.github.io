@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,84 +14,96 @@
     <link href="css/portfolio-item.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link rel=icon href=favicon.ico>
+</head>
 
-  </head>
-  <body>
+<body>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#"><img id="nav-img" src="img/city.png">Les restos</a>
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <a class="navbar-brand" href=""><img id="nav-img" src="img/city.png">Les restos</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li data-menuanchor="firstPage">
+                        <a href="#firstPage">Plan Resto</a>
+                    </li>
+                    <li data-menuanchor="secondPage">
+                        <a href="#secondPage">Ajout Resto</a>
+                    </li>
+                    <li data-menuanchor="3rdPage">
+                        <a href="#3rdPage">TODO</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
         </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
-            <li>
-              <a href="#">TODO</a>
-            </li>
-            <li>
-              <a href="#">TODO</a>
-            </li>
-            <li>
-              <a href="#">TODO</a>
-            </li>
-          </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-      </div>
-      <!-- /.container -->
+        <!-- /.container -->
     </nav>
     <!-- Page Content -->
     <div class="container">
-      <!-- Portfolio Item Heading -->
-      <div class="row">
-        <div class="col-lg-12">
-          <h1 class="page-header">Plan Resto
-          <small>Le plan du restaurant</small>
-          </h1>
-        </div>
-      </div>
-      <!-- /.row -->
-      <!-- Portfolio Item Row -->
-      <div class="row">
-        <div class="col-md-8">
-          <div id="map"></div>
-        </div>
-        <div class="col-md-4">
-          <h3>Liste de mes restos </h3>
-          <ul class="list-group" id="restos">
-          </ul>
-        </div>
-      </div>
-      <!-- /.row -->
-      <!-- Related Projects Row -->
-      <div class="row">
-        <div class="col-lg-12">
-          <h3 class="page-header">TODO : Permet d'ajouter un resto </h3>
-        </div>
-      </div>
-      <!-- /.row -->
-      <hr>
-      <!-- Footer -->
-      <footer>
+        <!-- Row titre du plan resto-->
         <div class="row">
-          <div class="col-lg-12">
-            <p>Copyright &copy; Les restaurants 2016</p>
-          </div>
+            <div class="col-lg-12">
+                <h1 class="page-header">Plan Resto
+                <small>Le plan du restaurant</small>
+                </h1>
+            </div>
         </div>
         <!-- /.row -->
-      </footer>
+        <!-- Row Content du plan resto -->
+        <div class="row section">
+            <div class="col-md-8">
+                <div id="map"></div>
+            </div>
+            <div class="col-md-4">
+                <h3>Liste de mes restos </h3>
+                <ul class="list-group" id="restos">
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+        <!-- Row titre de l'ajout resto-->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Ajout Resto (TODO)
+                <small>Ajouter un resto dans la liste</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+        <!-- Row Content de l'ajout resto -->
+        <div class="row section">
+            <div class="col-md-8">
+                <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+                <div id="map2"></div>
+            </div>
+            
+        </div>
+        <!-- /.row -->
+        <hr>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Les restaurants 2016</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
     </div>
     <!-- /.container -->
-
-
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyoQA18Vsk4RBODcP5pvQMEFnlupQqsS4&signed_in=true&libraries=places&callback=initMap" async defer></script>
     <!-- JS -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
-    
-  </body>
+    <!-- Scroll -->
+    <script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
+</body>
+
 </html>
