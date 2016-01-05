@@ -7,9 +7,9 @@
 
 body
 {
-	font-size: 10px;
+	font-size: 1.5em;
 	font-family: verdana, arial, sans-serif;
-  padding 20px 0;
+  	padding 20px 0;
 }
 
 #map {
@@ -73,4 +73,12 @@ img#nav-img {
     font-family: Roboto;
     font-size: 13px;
     font-weight: 300;
+}
+
+.fp-section {
+	height:100% !important;
+}
+
+.fp-tableCell {
+	height:100% !important;
 }
