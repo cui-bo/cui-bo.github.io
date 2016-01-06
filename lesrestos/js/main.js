@@ -144,11 +144,23 @@
           // #################
           var restos;
 
+          var query = "SELECT 'id', 'address', 'latitude', 'longitude', 'zoom', 'description' FROM " +
+              '1Y9-XOpp6P4E9q4LcT04qOPMVALl_h4XreAijK-2l';
+          var encodedQuery = encodeURIComponent(query);
+
+          // Construct the URL
+          var url = ['https://www.googleapis.com/fusiontables/v1/query'];
+          url.push('?sql=' + encodedQuery);
+          url.push('&key=AIzaSyBg63wEVqhWLz0zwv0xMveTtsqsmTO-IfE');
+          //url.push('&callback=?');
+console.log(url.join(''));
           $.ajax({ // Ajax allows to get the restos data from a json file
               type: "GET",
-              url: "data/restos.json",
-              dataType: "json",
+              url: url.join(''),
+              dataType: "jsonp",
               success: function(data) {
+console.log(data);
+                /*
                   if (false === jQuery.isEmptyObject(data.restos)) {
                       restos = data.restos;
                       var htmlResto = '';
@@ -159,10 +171,8 @@
 
                       // Add mouse on hover effet 
                       $("li.list-group-item").hover(function() {
-                          /* Stuff to do when the mouse enters the element */
                           $(this).addClass('list-group-item-info');
                       }, function() {
-                          /* Stuff to do when the mouse leaves the element */
                           $(this).removeClass('list-group-item-info');
                       });
 
@@ -180,6 +190,7 @@
                       });
 
                   };
+                  */
               },
               error: function() {
                   console.log("Error occured");
@@ -196,7 +207,7 @@
               anchors: ['firstPage', 'secondPage', '3rdPage'],
               // sectionsColor: ['#C63D0F', '#1BBC9B', '#7E8F7C'],
               autoScrolling: false,
-              resize:false,
+              resize: false,
               sectionSelector: '.section',
               fitToSection: false
           });
