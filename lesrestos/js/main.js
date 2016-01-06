@@ -144,23 +144,25 @@
           // #################
           var restos;
 
-          var query = "SELECT 'id', 'address', 'latitude', 'longitude', 'zoom', 'description' FROM " +
-              '1Y9-XOpp6P4E9q4LcT04qOPMVALl_h4XreAijK-2l';
-          var encodedQuery = encodeURIComponent(query);
-
-          // Construct the URL
-          var url = ['https://www.googleapis.com/fusiontables/v1/query'];
-          url.push('?sql=' + encodedQuery);
-          url.push('&key=AIzaSyBg63wEVqhWLz0zwv0xMveTtsqsmTO-IfE');
-          //url.push('&callback=?');
-console.log(url.join(''));
+//           var query = "SELECT * FROM " +
+//               '1Y9-XOpp6P4E9q4LcT04qOPMVALl_h4XreAijK-2l';
+//           var encodedQuery = encodeURIComponent(query);
+//
+//           // Construct the URL
+//           var url = ['https://www.googleapis.com/fusiontables/v2/query'];
+//           url.push('?sql=' + encodedQuery);
+//           url.push('&key=AIzaSyBg63wEVqhWLz0zwv0xMveTtsqsmTO-IfE');
+//           //url.push('&callback=?');
+// console.log(url.join(''));
           $.ajax({ // Ajax allows to get the restos data from a json file
               type: "GET",
-              url: url.join(''),
-              dataType: "jsonp",
+              // url: url.join(''),
+              url: "data/restos.json",
+              // dataType: "jsonp",
+              dataType: "json",
               success: function(data) {
 console.log(data);
-                /*
+
                   if (false === jQuery.isEmptyObject(data.restos)) {
                       restos = data.restos;
                       var htmlResto = '';
@@ -169,14 +171,14 @@ console.log(data);
                       });
                       $("#restos").html(htmlResto);
 
-                      // Add mouse on hover effet 
+                      // Add mouse on hover effet
                       $("li.list-group-item").hover(function() {
                           $(this).addClass('list-group-item-info');
                       }, function() {
                           $(this).removeClass('list-group-item-info');
                       });
 
-                      // Add click listener 
+                      // Add click listener
                       $("#restos li").click(function(event) {
                           var idClicked = $(this).attr('id');
                           var resto = $.grep(restos, function(e) {
@@ -190,7 +192,7 @@ console.log(data);
                       });
 
                   };
-                  */
+
               },
               error: function() {
                   console.log("Error occured");
