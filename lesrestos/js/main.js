@@ -157,41 +157,41 @@
           $.ajax({ // Ajax allows to get the restos data from a json file
               type: "GET",
               // url: url.join(''),
-              url: "data/restos.json",
+              url: "http://php-cuibo.rhcloud.com/backoffice/",
               // dataType: "jsonp",
               dataType: "json",
               success: function(data) {
 console.log(data);
 
-                  if (false === jQuery.isEmptyObject(data.restos)) {
-                      restos = data.restos;
-                      var htmlResto = '';
-                      $.each(restos, function(index, el) {
-                          htmlResto += '<li class="list-group-item" id="' + el.id + '">' + el.description + '</li>';
-                      });
-                      $("#restos").html(htmlResto);
-
-                      // Add mouse on hover effet
-                      $("li.list-group-item").hover(function() {
-                          $(this).addClass('list-group-item-info');
-                      }, function() {
-                          $(this).removeClass('list-group-item-info');
-                      });
-
-                      // Add click listener
-                      $("#restos li").click(function(event) {
-                          var idClicked = $(this).attr('id');
-                          var resto = $.grep(restos, function(e) {
-                              if (idClicked == e.id) {
-                                  return e;
-                              };
-                          });
-
-                          // Rebuild the map
-                          changePosition(resto[0].position, resto[0].zoom, resto[0].description);
-                      });
-
-                  };
+                  // if (false === jQuery.isEmptyObject(data.restos)) {
+                  //     restos = data.restos;
+                  //     var htmlResto = '';
+                  //     $.each(restos, function(index, el) {
+                  //         htmlResto += '<li class="list-group-item" id="' + el.id + '">' + el.description + '</li>';
+                  //     });
+                  //     $("#restos").html(htmlResto);
+                  //
+                  //     // Add mouse on hover effet
+                  //     $("li.list-group-item").hover(function() {
+                  //         $(this).addClass('list-group-item-info');
+                  //     }, function() {
+                  //         $(this).removeClass('list-group-item-info');
+                  //     });
+                  //
+                  //     // Add click listener
+                  //     $("#restos li").click(function(event) {
+                  //         var idClicked = $(this).attr('id');
+                  //         var resto = $.grep(restos, function(e) {
+                  //             if (idClicked == e.id) {
+                  //                 return e;
+                  //             };
+                  //         });
+                  //
+                  //         // Rebuild the map
+                  //         changePosition(resto[0].position, resto[0].zoom, resto[0].description);
+                  //     });
+                  //
+                  // };
 
               },
               error: function() {
