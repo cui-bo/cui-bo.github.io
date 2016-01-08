@@ -1,3 +1,29 @@
+      // ####################
+      // Personnal Functions
+      // #################### 
+      function reformData(data) {
+          // data = data from database
+          var resto = {};
+          var position = {};
+          var arr = [];
+          for (var i = 0; i < data.length ; i++) {
+            resto.id = data[i].resto;
+            position.lat = parseFloat(data[i].latitude);
+            position.lng = parseFloat(data[i].longitude);
+            resto.position = position;
+            resto.zoom = parseInt(data[i].zoom);
+            resto.description = data[i].description;
+            arr.push(resto);
+            resto = {};
+            position = {};
+          };
+          return arr;
+      }
+
+
+      // ####################
+      // GOOGLE Map Functions
+      // ####################
       // Initialise map
       function initMap() { // InitMap start
           // Plan du resto
@@ -143,55 +169,42 @@
           // Management of Map
           // #################
           var restos;
+          var urlBackoffice = "http://php-cuibo.rhcloud.com/backoffice/";
 
-//           var query = "SELECT * FROM " +
-//               '1Y9-XOpp6P4E9q4LcT04qOPMVALl_h4XreAijK-2l';
-//           var encodedQuery = encodeURIComponent(query);
-//
-//           // Construct the URL
-//           var url = ['https://www.googleapis.com/fusiontables/v2/query'];
-//           url.push('?sql=' + encodedQuery);
-//           url.push('&key=AIzaSyBg63wEVqhWLz0zwv0xMveTtsqsmTO-IfE');
-//           //url.push('&callback=?');
-// console.log(url.join(''));
-          $.ajax({ // Ajax allows to get the restos data from a json file
+          $.ajax({ // Ajax allows to get the restos data from database
               type: "GET",
-              // url: url.join(''),
-              url: "http://php-cuibo.rhcloud.com/backoffice/",
-              // dataType: "jsonp",
+              url: urlBackoffice,
               dataType: "json",
               success: function(data) {
-console.log(data);
+                  var dataReformed = reformData(data);
+                  if (false === jQuery.isEmptyObject(dataReformed)) {
+                      var htmlResto = '';
+                      $.each(dataReformed, function(index, el) {
+                          htmlResto += '<li class="list-group-item" id="' + el.id + '">' + el.description + '</li>';
+                      });
+                      $("#restos").html(htmlResto);
+                  
+                      // Add mouse on hover effet
+                      $("li.list-group-item").hover(function() {
+                          $(this).addClass('list-group-item-info');
+                      }, function() {
+                          $(this).removeClass('list-group-item-info');
+                      });
+                  
+                      // Add click listener
+                      $("#restos li").click(function(event) {
+                          var idClicked = $(this).attr('id');
+                          var resto = $.grep(dataReformed, function(e) {
+                              if (idClicked == e.id) {
+                                  // Rebuild the map
+                                  changePosition(e.position, e.zoom, e.description);
+                              };
+                          });
 
-                  // if (false === jQuery.isEmptyObject(data.restos)) {
-                  //     restos = data.restos;
-                  //     var htmlResto = '';
-                  //     $.each(restos, function(index, el) {
-                  //         htmlResto += '<li class="list-group-item" id="' + el.id + '">' + el.description + '</li>';
-                  //     });
-                  //     $("#restos").html(htmlResto);
-                  //
-                  //     // Add mouse on hover effet
-                  //     $("li.list-group-item").hover(function() {
-                  //         $(this).addClass('list-group-item-info');
-                  //     }, function() {
-                  //         $(this).removeClass('list-group-item-info');
-                  //     });
-                  //
-                  //     // Add click listener
-                  //     $("#restos li").click(function(event) {
-                  //         var idClicked = $(this).attr('id');
-                  //         var resto = $.grep(restos, function(e) {
-                  //             if (idClicked == e.id) {
-                  //                 return e;
-                  //             };
-                  //         });
-                  //
-                  //         // Rebuild the map
-                  //         changePosition(resto[0].position, resto[0].zoom, resto[0].description);
-                  //     });
-                  //
-                  // };
+                          
+                      });
+                  
+                  };
 
               },
               error: function() {
