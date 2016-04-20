@@ -1,0 +1,102 @@
+html,
+body {
+    font: 12px arial;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* container */
+
+.container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    min-height: 600px;
+    min-width: 800px;
+    text-align: center;
+}
+
+
+/* main */
+
+.main {
+    position: absolute;
+    top: 80px;
+    left: 20%;
+    text-align: center;
+    width: 660px;
+    background-color: #F8F8F8;
+}
+
+.mainfld {
+    border-width: 0.5px;
+    border-color: #BFBFBF;
+}
+
+.communication {
+    position: absolute;
+    top:-3%;
+    right: 5%;
+}
+
+.comfld {
+    border-style:solid;
+    border-color: #AD3E43;
+    border-radius: 3px;
+    border-width: 1px;
+    background-color: #FFFFFF;
+    padding: 4px 5px 4px 0;
+}
+
+.comfld .comtele {
+    background-color: #AE3F44;
+    padding: 6px 6px 7px 10px;
+    color: white;
+    border-radius: 2px;
+
+}
+
+.comfld .comno {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.comspan {
+    color: #AE3F44;
+    font-size: 12px;
+    padding: 6px 2px;
+}
+
+.mainh1 {
+    padding: 10px;
+    margin-left: -300px;
+    font-size: 20px;
+}
+
+.form-group {
+    padding: 5px 0 5px 5px;
+}
+
+.form-control {
+    float :right;
+}
+
+.subbutton{
+    background-color: #760206 !important;
+    color: white !important;
+}
+
+.note {
+    float: right;
+    margin: 20px;
+}
+
+select {
+  width : 200px;
+}
+
+.msg {
+    display: block;
+}
