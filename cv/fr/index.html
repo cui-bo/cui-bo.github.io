@@ -1,148 +1,213 @@
 <!DOCTYPE html>
 <html>
 <head>
-<!-- <title>Bo - Curriculum Vitae</title> -->
-<title>Bo - CV en fran&ccedil;ais</title>
+    <!-- <title>Bo - Curriculum Vitae</title> -->
+    <title>Bo - CV en fran&ccedil;ais</title>
 
-<meta name="viewport" content="width=device-width"/>
-<meta name="description" content="The Curriculum Vitae of Bo."/>
-<meta charset="UTE-8">
+    <meta name="viewport" content="width=device-width"/>
+    <meta name="description" content="The Curriculum Vitae of Bo."/>
+    <meta charset="UTE-8">
 
-<link type="text/css" rel="stylesheet" href="style.css">
-<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../css/bootstrap-theme.min.css">
+    <link type="text/css" rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
 
-<!--[if lt IE 9]>
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 </head>
 <body id="top">
 <div id="cv" class="instaFade">
-	<div class="mainDetails">
-		<div id="headshot" class="quickFade">
-			<img src="bo.png" alt="Bo" />
-		</div>
+    <div class="mainDetails">
+        <div id="headshot" class="quickFade">
+            <img src="bo.png" alt="Bo"/>
+        </div>
 
-		<div id="name">
-			<h1 class="quickFade delayTwo">CUI Bo</h1>
-			<h2 class="quickFade delayThree">Concepteur D&eacute;veloppeur</h2>
-		</div>
+        <div id="name">
+            <h1 class="quickFade delayTwo">CUI Bo</h1>
+            <h2 class="quickFade delayThree">Concepteur D&eacute;veloppeur</h2>
+        </div>
 
-		<div id="contactDetails" class="quickFade delayFour">
-			<ul>
-				<li>Email: <a href="mailto:cuibofrance@gmail.com" target="_blank">cuibofrance@gmail.com</a></li>
-				<li>Site: <a href="http://cui-bo.github.io">cui-bo.github.io</a></li>
-				<li>Mobile: 06********</li>
-			</ul>
-		</div>
-		<div class="clear"></div>
-	</div>
+        <div id="contactDetails" class="quickFade delayFour">
+            <ul>
+                <li>Email: <a href="mailto:cupidcb@gmail.com" target="_blank">cupidcb@gmail.com</a></li>
+                <li>Site: <a href="http://cui-bo.github.io">cui-bo.github.io</a></li>
+                <li>Mobile: 06********</li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+    </div>
 
-	<div id="mainArea" class="quickFade delayFive">
-	<!--
-		<section>
-			<article>
-				<div class="sectionTitle">
-					<h1>Personal Profile</h1>
-				</div>
+    <div id="mainArea" class="quickFade delayFive">
+        <!--
+            <section>
+                <article>
+                    <div class="sectionTitle">
+                        <h1>Personal Profile</h1>
+                    </div>
 
-				<div class="sectionContent">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor metus, interdum at scelerisque in, porta at lacus. Maecenas dapibus luctus cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim. Vestibulum bibendum mattis dignissim. Proin id sapien quis libero interdum porttitor.</p>
-				</div>
-			</article>
-			<div class="clear"></div>
-		</section>
-	-->
+                    <div class="sectionContent">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor metus, interdum at scelerisque in, porta at lacus. Maecenas dapibus luctus cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies massa et erat luctus hendrerit. Curabitur non consequat enim. Vestibulum bibendum mattis dignissim. Proin id sapien quis libero interdum porttitor.</p>
+                    </div>
+                </article>
+                <div class="clear"></div>
+            </section>
+        -->
 
-		<section>
-			<div class="sectionTitle">
-				<h1>EXP&Eacute;RIENCES</h1>
-			</div>
+        <section>
+            <div class="sectionTitle">
+                <h1>EXP&Eacute;RIENCES</h1>
+            </div>
 
-			<div class="sectionContent">
-				<article>
-					<a href="http://www.laposte.fr"><h2>La Poste</h2></a>
-					<p class="subDetails">Septembre 2011 - Pr&eacute;sent</p>
-					<p>Am&eacute;lioration de traitement du courrier.</p>
-				</article>
+            <div class="sectionContent">
+                <article>
+                    <a href="http://www.laposte.fr"><h2>La Poste</h2></a>
+                    <p class="subDetails">Septembre 2011 - Pr&eacute;sent</p>
+                    <p>Concepteur et développeur à La Poste.</p>
+                    <p>Full Stack Developer on the way :</p>
 
-				<article>
-					<a href="http://pyramyd.fr/"><h2>Pyramyd NTCV (stage)</h2></a>
-					<p class="subDetails">Juillet 2011 - Septembre 2011</p>
-					<p>D&eacute;veloppement du site web en Ruby on Rails.</p>
-				</article>
+                    <div id="accordion">
+                        <h3>1. System administration</h3>
+                        <div>
+                            <ul>
+                                <li>Linux and basic shell scripting => OK</li>
+                                <li>Cloud computing: Aliyun Linode => OK</li>
+                                <li>Caching: Memcached => OK</li>
+                            </ul>
+                        </div>
+                        <h3>2. Web development tools</h3>
+                        <div>
+                            <ul>
+                                <li>Version control: Git, SVN => OK</li>
+                                <li>Virtualization: VirtualBox, Vagrant, Docker => VB OK, Docker processing</li>
+                            </ul>
+                        </div>
+                        <h3>3. Back-end tech</h3>
+                        <div>
+                            <ul>
+                                <li>Web servers: Apache => OK; Nginx => Not yet (but failliar with Apache) => OK</li>
+                                <li>Programming language: PHP,wordpress,Laravel,PHPCMS => OK (PHP, my native development
+                                    language) => OK
+                                </li>
+                                <li>MySQL => OK</li>
+                            </ul>
+                        </div>
+                        <h3>4. Front-end tech</h3>
+                        <div>
+                            <ul>
+                                <li>HTML / HTML5: Semantic web => OK</li>
+                                <li>CSS / CSS3: BootStrap => OK</li>
+                                <li>JavaScript: jQuery, BootStrap => OK</li>
+                                <li>AJAX, JSON, XML, WebSocket => OK</li>
+                            </ul>
+                        </div>
+                        <h3>5. Design</h3>
+                        <div>
+                            <ul>
+                                <li>Converting website design into front-end code: Photoshop => Medium</li>
+                                <li>UI => Not yet</li>
+                                <li>UX => Not yet</li>
+                            </ul>
+                        </div>
+                        <h3>6. Mobile technologie</h3>
+                        <div>
+                            <ul>
+                                <li>Android Or IOS => Not yet but willing</li>
+                            </ul>
+                        </div>
+                        <h3>7. Basic IT Skill</h3>
+                        <div>
+                            <p>Word Excel PPT => OK</p>
+                        </div>
+                    </div>
 
-			</div>
-			<div class="clear"></div>
-		</section>
+                    <p>Tools for development :</p>
+                    <p>- otto : a tool which builds a development or deployment environment automatically (no more need
+                        to write shell script to build dev environment)</p>
+                    <p>- polarsys : un open source for embedded system (Papyrus for SysML and UML modeling.)</p>
+
+                </article>
+
+                <article>
+                    <a href="http://pyramyd.fr/"><h2>Pyramyd NTCV (stage)</h2></a>
+                    <p class="subDetails">Juillet 2011 - Septembre 2011</p>
+                    <p>D&eacute;veloppement du site web en Ruby on Rails.</p>
+                </article>
+
+            </div>
+            <div class="clear"></div>
+        </section>
 
 
-		<section>
-			<div class="sectionTitle">
-				<h1>COMP&Eacute;TENCES</h1>
-			</div>
+        <section>
+            <div class="sectionTitle">
+                <h1>COMP&Eacute;TENCES</h1>
+            </div>
 
-			<div class="sectionContent">
-				<ul class="keySkills">
-					<li>Javascript, jQuery, PHP, SQL, Shell, Ruby</li>
-					<li>Apache2, Solr</li>
-					<li>Client/Serveur, MVC</li>
-					<li>Scurm, TDD</li>
-					<li>SVN, Git</li>
-				</ul>
-			</div>
-			<div class="clear"></div>
-		</section>
+            <div class="sectionContent">
+                <ul class="keySkills">
+                    <li>Javascript, jQuery, PHP, SQL, Shell, Ruby</li>
+                    <li>Apache2, Solr</li>
+                    <li>Client/Serveur, MVC</li>
+                    <li>Scurm, TDD</li>
+                    <li>SVN, Git</li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </section>
 
 
-		<section>
-			<div class="sectionTitle">
-				<h1>FORMATIONS</h1>
-			</div>
+        <section>
+            <div class="sectionTitle">
+                <h1>FORMATIONS</h1>
+            </div>
 
-			<div class="sectionContent">
-				<article>
-					<a href="http://www.upmc.fr/"><h2>Universit&eacute; Pierre et Marie CURIE</h2></a>
-					<p class="subDetails">Sep. 2010 - Juin 2011</p>
-					<ul class="cursus">
-						<li>Bio-Informatique</li>
-						<li>Systèmes et Applications R&eacute;partis</li>
-					</ul>
-					<br/>
-				</article>
+            <div class="sectionContent">
+                <article>
+                    <a href="http://www.upmc.fr/"><h2>Universit&eacute; Pierre et Marie CURIE</h2></a>
+                    <p class="subDetails">Sep. 2010 - Juin 2011</p>
+                    <ul class="cursus">
+                        <li>Bio-Informatique</li>
+                        <li>Systèmes et Applications R&eacute;partis</li>
+                    </ul>
+                    <br/>
+                </article>
 
-				<article>
-					<a href="http://www.supinfo.com/"><h2>SUPINFO International University</h2></a>
-					<p class="subDetails">Sep. 2009 - Juin 2010</p>
-					<p>Programme d'echange en France avec l'Universit&eacute; de Technologie du Hebei.</p>
-				</article>
+                <article>
+                    <a href="http://www.supinfo.com/"><h2>SUPINFO International University</h2></a>
+                    <p class="subDetails">Sep. 2009 - Juin 2010</p>
+                    <p>Programme d'echange en France avec l'Universit&eacute; de Technologie du Hebei.</p>
+                </article>
 
-				<article>
-					<a href="http://eweb.hebut.edu.cn/"><h2>HEBEI University of Technology</h2></a>
-					<p class="subDetails">Sep. 2005 - Juin 2009</p>
-					<p>Programme d'echange en Chine avec SUPINFO International University.</p>
-				</article>
-			</div>
-			<div class="clear"></div>
-		</section>
+                <article>
+                    <a href="http://eweb.hebut.edu.cn/"><h2>HEBEI University of Technology</h2></a>
+                    <p class="subDetails">Sep. 2005 - Juin 2009</p>
+                    <p>Programme d'echange en Chine avec SUPINFO International University.</p>
+                </article>
+            </div>
+            <div class="clear"></div>
+        </section>
 
-		<section>
-			<div class="sectionTitle">
-				<h1>LOISIRS</h1>
-			</div>
+        <section>
+            <div class="sectionTitle">
+                <h1>LOISIRS</h1>
+            </div>
 
-			<div class="sectionContent">
-				<article>
-					<ul>
-						<li>D&eacute;veloppement de nouveaux technologies(NodeJs, AngularJs, NOSQL, IOS, Android)</li>
-						<li>Sport d'&eacute;quipe(Basket, Foot)</li>
-						<li>DIY Voyage(Nice, Strasbourg, Amsterdam, Barcelone, Zurich, Brussel, Mal&eacute;))</li>
-					</ul>
-				</article>
-			</div>
-			<div class="clear"></div>
-		</section>
+            <div class="sectionContent">
+                <article>
+                    <ul>
+                        <li>D&eacute;veloppement de nouveaux technologies(NodeJs, AngularJs, NOSQL, IOS, Android)</li>
+                        <li>Sport d'&eacute;quipe(Basket, Foot)</li>
+                        <li>DIY Voyage(Nice, Strasbourg, Amsterdam, Barcelone, Zurich, Brussel, Mal&eacute;))</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="clear"></div>
+        </section>
 
-	</div>
+    </div>
 </div>
 <!--
 <script type="text/javascript">
@@ -155,5 +220,9 @@ pageTracker._initData();
 pageTracker._trackPageview();
 </script>
 -->
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/main.js"></script>
 </body>
 </html>
